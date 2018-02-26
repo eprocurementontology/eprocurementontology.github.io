@@ -4,14 +4,14 @@ Welcome to this Github repository. In this space you will find the ***online doc
 
 **Current Release (v2.0.0)**
 
-1. [Online Documentation](https://eprocurement-everis.github.io/)
+1. [Online Documentation](https://eprocurementontology.github.io/)
 2. [Joinup collection](https://joinup.ec.europa.eu/solution/eprocurement-ontology)
-2. [Release Notes](https://eprocurement-everis.github.io/release_notes.html)
-3. [Online Resources Github](https://github.com/eProcurement-everis/O3PO)
+2. [Release Notes](https://eprocurementontology.github.io/release_notes.html)
+3. [Online Resources GitHub](https://github.com/eprocurementontology/eprocurementontology/v2.0.0)
 
 **Version v1.0**
 
-1. [OP v1.0.0 - Github](https://github.com/eprocurementontology)
+1. [OP v1.0.0 - GitHub](https://github.com/eprocurementontology/eprocurementontology)
 
 
 
