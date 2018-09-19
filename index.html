@@ -686,7 +686,8 @@ such a standard.</p>
 <div class="title">Figure 1. eProcurement Value-Chain, an EU vision</div>
 </div>
 <div class="paragraph">
-<p>The scope of the Charter was set to cover the "specification showing the conceptual model and its representation in OWL, and the deployment of the ontology and related code lists and classifications on the <a href="http://publications.europa.eu/mdr/">Metadata Registry</a>".</p>
+<p>The scope of the Charter was set to cover the "specification showing the conceptual model and its representation in OWL, and the deployment of the ontology and related code lists and classifications on the
+<a href="https://publications.europa.eu/en/web/eu-vocabularies">Metadata Registry</a>" (see section on the right page of the EU Vocabularies site).</p>
 </div>
 <div class="paragraph">
 <p>The original aim was to produce the final Ontology within twelve months including a public review of at least two months; and a set of three deliverables was identified as the main outcome of the project:</p>
@@ -883,8 +884,7 @@ foaf (<a href="http://www.foaf-project.org/">Friend of a Friend</a>).</p>
 <li>
 <p>On another hand, other lexical (non-ontological) resources and good practices have been taken as models to inspire the drafting of sub-vocabularies
 to be imported and reused by the ePO. This has been the case of the CCTS
-(<a href="https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ccts.ttl">Core Component Type Specification</a>,
-an <a href="http://www.ebxml.org/">ebXML</a> model based on the <a href="https://www.iso.org/standard/61433.html">ISO 15000-5:2014</a> maintained by UN/CEFACT) for the data types
+(<a href="https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ccts.ttl">Core Component Type Specification</a>
 Identifier, Amount, Quantity and Measure <sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</sup>); and
 <a href="http://docs.oasis-open.org/ubl/UBL-2.2.html">UBL-2.2</a> (OASIS <a href="https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ubl.ttl">Universal Business Language</a>,
 just the Period element, for the time being).</p>
@@ -1823,7 +1823,7 @@ those that have additional dimensions (attributes) like Identifier, Amount, Quan
 <div class="paragraph">
 <p>This ePO implementation "primitive" ones as xsd types, string for Text, dateTime for Date and Time, boolean for Indicator, decimal for Numeric, and so on.
 The rest of complex data types are implemented as classes with their own data properties, including a placeholder for the value (the actual datum).
-See section <a href="file:#iv-design-and-implementation">IV. Design and Implementation</a> for details on the Turtle (TTL) implementation.</p>
+See section <a href="#iv-design-and-implementation">IV. Design and Implementation</a> for details on the Turtle (TTL) implementation.</p>
 </div>
 </div>
 </div>
@@ -1962,7 +1962,7 @@ use the <a href="https://www.unece.org/cefact/codesfortrade/ccts_index.html">UN/
 <div class="paragraph">
 <p>Codes, in ePO, are implemented as <a href="">SKOS</a>
 concepts, but they are also aligned to the requirements commonly needed in eProcurement (see sections below, on codes and code lists).
-See also the link:summary [Wikipedia] about SKOS, which contains a comprehensible summary of what SKOS is about and links to interesting references.</p>
+See also the <a href="https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System">Wikipedia</a> about SKOS, which contains a comprehensible summary of what SKOS is about and links to interesting references.</p>
 </div>
 </div>
 <div class="sect3">
@@ -2146,8 +2146,8 @@ and the individuals of the list (each "concept" of the list).</p>
 <div class="sect3">
 <h4 id="identifiers"><a class="anchor" href="#identifiers"></a><a class="link" href="#identifiers">Identifiers</a></h4>
 <div class="paragraph">
-<p>As commented above, ePO defines a class Identifier in alignment to the ISO 15000 Core Component Specification.
-This link:<a href="https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ccts.ttl">class</a>
+<p>As commented above, ePO defines a class Identifier in alignment to the UN/CEFACT Core Component Specification (CTTS).
+This <a href="https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/ttl/ccts.ttl">Class</a>
 looks like this:</p>
 </div>
 <div class="listingblock">
@@ -2263,7 +2263,7 @@ looks like this:</p>
 <div class="title">Figure 37. Attributes of the CCTS IdentifierType element</div>
 </div>
 <div class="paragraph">
-<p>The definition of these definitions, as provided by OASIS UBL (ISO/IEC 19845), follows:</p>
+<p>These definitions, as provided by OASIS UBL (ISO/IEC 19845), follow:</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
 <caption class="title">Table 2. CCTS IdentifierType attributes</caption>
@@ -2754,18 +2754,8 @@ INSERT DATA
 			ccts:schemeAgencyID "eu.europa.publicationsoffice.epo"
 	}
 }
-...
-<i class="conum" data-value="1"></i><b>(1)</b></pre>
+...</pre>
 </div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>See <a href="https://github.com/eprocurementontology/eprocurementontology/blob/master/v2.0.0/05_Implementation/epo-etl/test/resources/output/SPARQL_Queries.zip">GitHub code repository</a>
-or execute the code for complete examples.</td>
-</tr>
-</table>
 </div>
 <div class="admonitionblock note">
 <table>
