@@ -2653,8 +2653,22 @@ you will need to register as a User of the TED website and to have an ECAS accou
 </li>
 <li>
 <p>The <a href="ftp://ted.europa.eu/">FTP</a> server supplied by the OP at: <a href="ftp://ted.europa.eu/" class="bare">ftp://ted.europa.eu/</a>
-(user: <strong>guest</strong>, password: <strong>guest</strong>). If you use this FTP Server please read the <strong>rules defined to avoid performance issues</strong> for other users
-in the folder "Resources".</p>
+(user: <strong>guest</strong>, password: <strong>guest</strong>). If you use this FTP Server note that there is  a restriction on maximum number of connections to the ftp,
+with the following criteria:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Maximum number of overall connections  ~1050 but can be decreased to ~525 if the server  is under maintenance;</p>
+</li>
+<li>
+<p>Maximum 3 concurrent connections by IP or user;</p>
+</li>
+<li>
+<p>A maximum of 100 concurrent connections for “legacy” user (i.e. not guest account) as same account could be used by several IPs.
+Once the limit is reached, the server will refuse new connections from the IP/user.</p>
+</li>
+</ul>
+</div>
 </li>
 </ol>
 </div>
