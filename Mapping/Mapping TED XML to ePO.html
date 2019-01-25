@@ -1,326 +1,2779 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:x="urn:schemas-microsoft-com:office:excel"
-xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
-<meta name="Excel Workbook Frameset">
 <meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <meta name=ProgId content=Excel.Sheet>
 <meta name=Generator content="Microsoft Excel 15">
 <link rel=File-List href="Mapping%20TED%20XML%20to%20ePO_archivos/filelist.xml">
-<![if !supportTabStrip]>
-<link id="shLink" href="Mapping%20TED%20XML%20to%20ePO_archivos/sheet001.html">
-
-<link id="shLink">
-
-<script language="JavaScript">
-<!--
- var c_lTabs=1;
-
- var c_rgszSh=new Array(c_lTabs);
- c_rgszSh[0] = "TED XML to ePO";
-
-
-
- var c_rgszClr=new Array(8);
- c_rgszClr[0]="window";
- c_rgszClr[1]="buttonface";
- c_rgszClr[2]="windowframe";
- c_rgszClr[3]="windowtext";
- c_rgszClr[4]="threedlightshadow";
- c_rgszClr[5]="threedhighlight";
- c_rgszClr[6]="threeddarkshadow";
- c_rgszClr[7]="threedshadow";
-
- var g_iShCur;
- var g_rglTabX=new Array(c_lTabs);
-
-function fnGetIEVer()
-{
- var ua=window.navigator.userAgent
- var msie=ua.indexOf("MSIE")
- if (msie>0 && window.navigator.platform=="Win32")
-  return parseInt(ua.substring(msie+5,ua.indexOf(".", msie)));
- else
-  return 0;
-}
-
-function fnBuildFrameset()
-{
- var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\""+document.all.item("shLink")[0].href+"\" name=\"frSheet\" noresize>"+
-  "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
-  "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
-  "</frameset></frameset><plaintext>";
-
- with (document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
-
- fnBuildTabStrip();
-}
-
-function fnBuildTabStrip()
-{
- var szHTML=
-  "<html><head><style>.clScroll {font:8pt Courier New;color:"+c_rgszClr[6]+";cursor:default;line-height:10pt;}"+
-  ".clScroll2 {font:10pt Arial;color:"+c_rgszClr[6]+";cursor:default;line-height:11pt;}</style></head>"+
-  "<body onclick=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" onselectstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+" topmargin=0 leftmargin=0><table cellpadding=0 cellspacing=0 width=100%>"+
-  "<tr><td colspan=6 height=1 bgcolor="+c_rgszClr[2]+"></td></tr>"+
-  "<tr><td style=\"font:1pt\">&nbsp;<td>"+
-  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(0);\" onmouseout=\"parent.fnMouseOutScroll(0);\"><a>&#171;</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(0);\" ondblclick=\"parent.fnScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(1);\" onmouseout=\"parent.fnMouseOutScroll(1);\"><a>&lt</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(1);\" ondblclick=\"parent.fnScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(2);\" onmouseout=\"parent.fnMouseOutScroll(2);\"><a>&gt</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(3);\" onmouseout=\"parent.fnMouseOutScroll(3);\"><a>&#187;</a></td>"+
-  "<td style=\"font:1pt\">&nbsp;<td></tr></table></body></html>";
-
- with (frames['frScroll'].document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
-
- szHTML =
-  "<html><head>"+
-  "<style>A:link,A:visited,A:active {text-decoration:none;"+"color:"+c_rgszClr[3]+";}"+
-  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:9pt Arial;padding-left:3px;padding-right:3px;text-align:center;}"+
-  ".clBorder {background:"+c_rgszClr[2]+";font:1pt;}"+
-  "</style></head><body onload=\"parent.fnInit();\" onselectstart=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+
-  " topmargin=0 leftmargin=0><table id=tbTabs cellpadding=0 cellspacing=0>";
-
- var iCellCount=(c_lTabs+1)*2;
-
- var i;
- for (i=0;i<iCellCount;i+=2)
-  szHTML+="<col width=1><col>";
-
- var iRow;
- for (iRow=0;iRow<6;iRow++) {
-
-  szHTML+="<tr>";
-
-  if (iRow==5)
-   szHTML+="<td colspan="+iCellCount+"></td>";
-  else {
-   if (iRow==0) {
-    for(i=0;i<iCellCount;i++)
-     szHTML+="<td height=1 class=\"clBorder\"></td>";
-   } else if (iRow==1) {
-    for(i=0;i<c_lTabs;i++) {
-     szHTML+="<td height=1 nowrap class=\"clBorder\">&nbsp;</td>";
-     szHTML+=
-      "<td id=tdTab height=1 nowrap class=\"clTab\" onmouseover=\"parent.fnMouseOverTab("+i+");\" onmouseout=\"parent.fnMouseOutTab("+i+");\">"+
-      "<a href=\""+document.all.item("shLink")[i].href+"\" target=\"frSheet\" id=aTab>&nbsp;"+c_rgszSh[i]+"&nbsp;</a></td>";
-    }
-    szHTML+="<td id=tdTab height=1 nowrap class=\"clBorder\"><a id=aTab>&nbsp;</a></td><td width=100%></td>";
-   } else if (iRow==2) {
-    for (i=0;i<c_lTabs;i++)
-     szHTML+="<td height=1></td><td height=1 class=\"clBorder\"></td>";
-    szHTML+="<td height=1></td><td height=1></td>";
-   } else if (iRow==3) {
-    for (i=0;i<iCellCount;i++)
-     szHTML+="<td height=1></td>";
-   } else if (iRow==4) {
-    for (i=0;i<c_lTabs;i++)
-     szHTML+="<td height=1 width=1></td><td height=1></td>";
-    szHTML+="<td height=1 width=1></td><td></td>";
-   }
-  }
-  szHTML+="</tr>";
- }
-
- szHTML+="</table></body></html>";
- with (frames['frTabs'].document) {
-  open("text/html","replace");
-  charset=document.charset;
-  write(szHTML);
-  close();
- }
-}
-
-function fnInit()
-{
- g_rglTabX[0]=0;
- var i;
- for (i=1;i<=c_lTabs;i++)
-  with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i-1)])
-   g_rglTabX[i]=offsetLeft+offsetWidth-6;
-}
-
-function fnTabToCol(iTab)
-{
- return 2*iTab+1;
-}
-
-function fnNextTab(fDir)
-{
- var iNextTab=-1;
- var i;
-
- with (frames['frTabs'].document.body) {
-  if (fDir==0) {
-   if (scrollLeft>0) {
-    for (i=0;i<c_lTabs&&g_rglTabX[i]<scrollLeft;i++);
-    if (i<c_lTabs)
-     iNextTab=i-1;
-   }
-  } else {
-   if (g_rglTabX[c_lTabs]+6>offsetWidth+scrollLeft) {
-    for (i=0;i<c_lTabs&&g_rglTabX[i]<=scrollLeft;i++);
-    if (i<c_lTabs)
-     iNextTab=i;
-   }
-  }
- }
- return iNextTab;
-}
-
-function fnScrollTabs(fDir)
-{
- var iNextTab=fnNextTab(fDir);
-
- if (iNextTab>=0) {
-  frames['frTabs'].scroll(g_rglTabX[iNextTab],0);
-  return true;
- } else
-  return false;
-}
-
-function fnFastScrollTabs(fDir)
-{
- if (c_lTabs>16)
-  frames['frTabs'].scroll(g_rglTabX[fDir?c_lTabs-1:0],0);
- else
-  if (fnScrollTabs(fDir)>0) window.setTimeout("fnFastScrollTabs("+fDir+");",5);
-}
-
-function fnSetTabProps(iTab,fActive)
-{
- var iCol=fnTabToCol(iTab);
- var i;
-
- if (iTab>=0) {
-  with (frames['frTabs'].document.all) {
-   with (tbTabs) {
-    for (i=0;i<=4;i++) {
-     with (rows[i]) {
-      if (i==0)
-       cells[iCol].style.background=c_rgszClr[fActive?0:2];
-      else if (i>0 && i<4) {
-       if (fActive) {
-        cells[iCol-1].style.background=c_rgszClr[2];
-        cells[iCol].style.background=c_rgszClr[0];
-        cells[iCol+1].style.background=c_rgszClr[2];
-       } else {
-        if (i==1) {
-         cells[iCol-1].style.background=c_rgszClr[2];
-         cells[iCol].style.background=c_rgszClr[1];
-         cells[iCol+1].style.background=c_rgszClr[2];
-        } else {
-         cells[iCol-1].style.background=c_rgszClr[4];
-         cells[iCol].style.background=c_rgszClr[(i==2)?2:4];
-         cells[iCol+1].style.background=c_rgszClr[4];
-        }
-       }
-      } else
-       cells[iCol].style.background=c_rgszClr[fActive?2:4];
-     }
-    }
-   }
-   with (aTab[iTab].style) {
-    cursor=(fActive?"default":"hand");
-    color=c_rgszClr[3];
-   }
-  }
- }
-}
-
-function fnMouseOverScroll(iCtl)
-{
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[7];
-}
-
-function fnMouseOutScroll(iCtl)
-{
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[6];
-}
-
-function fnMouseOverTab(iTab)
-{
- if (iTab!=g_iShCur) {
-  var iCol=fnTabToCol(iTab);
-  with (frames['frTabs'].document.all) {
-   tdTab[iTab].style.background=c_rgszClr[5];
-  }
- }
-}
-
-function fnMouseOutTab(iTab)
-{
- if (iTab>=0) {
-  var elFrom=frames['frTabs'].event.srcElement;
-  var elTo=frames['frTabs'].event.toElement;
-
-  if ((!elTo) ||
-   (elFrom.tagName==elTo.tagName) ||
-   (elTo.tagName=="A" && elTo.parentElement!=elFrom) ||
-   (elFrom.tagName=="A" && elFrom.parentElement!=elTo)) {
-
-   if (iTab!=g_iShCur) {
-    with (frames['frTabs'].document.all) {
-     tdTab[iTab].style.background=c_rgszClr[1];
-    }
-   }
-  }
- }
-}
-
-function fnSetActiveSheet(iSh)
-{
- if (iSh!=g_iShCur) {
-  fnSetTabProps(g_iShCur,false);
-  fnSetTabProps(iSh,true);
-  g_iShCur=iSh;
- }
-}
-
- window.g_iIEVer=fnGetIEVer();
- if (window.g_iIEVer>=4)
-  fnBuildFrameset();
-//-->
-</script>
-<![endif]><!--[if gte mso 9]><xml>
- <x:ExcelWorkbook>
-  <x:ExcelWorksheets>
-   <x:ExcelWorksheet>
-    <x:Name>TED XML to ePO</x:Name>
-    <x:WorksheetSource
-     HRef="Mapping%20TED%20XML%20to%20ePO_archivos/sheet001.html"/>
-   </x:ExcelWorksheet>
-  </x:ExcelWorksheets>
-  <x:Stylesheet HRef="Mapping%20TED%20XML%20to%20ePO_archivos/stylesheet.css"/>
-  <x:WindowHeight>6750</x:WindowHeight>
-  <x:WindowWidth>14805</x:WindowWidth>
-  <x:WindowTopX>240</x:WindowTopX>
-  <x:WindowTopY>105</x:WindowTopY>
-  <x:ProtectStructure>False</x:ProtectStructure>
-  <x:ProtectWindows>False</x:ProtectWindows>
- </x:ExcelWorkbook>
-</xml><![endif]-->
+<style id="Mapping TED XML to ePO_16633_Styles"><!--table
+	{mso-displayed-decimal-separator:"\,";
+	mso-displayed-thousand-separator:"\.";}
+.xl1516633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6316633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6416633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:italic;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6516633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:italic;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6616633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl6716633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:red;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6816633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl6916633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Lucida Sans Unicode", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7016633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:14.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7116633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7216633
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:20.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+--></style>
 </head>
 
-<frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="Mapping%20TED%20XML%20to%20ePO_archivos/sheet001.html" name="frSheet">
- <frame src="Mapping%20TED%20XML%20to%20ePO_archivos/tabstrip.html" name="frTabs" marginwidth=0 marginheight=0>
- <noframes>
-  <body>
-   <p>Esta página utiliza marcos que su explorador no admite.</p>
-  </body>
- </noframes>
-</frameset>
+<body>
+<!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+<!--La siguiente información se generó mediante el Asistente para publicar como
+página web de Microsoft Excel.-->
+<!--Si se vuelve a publicar el mismo elemento desde Excel, se reemplazará toda
+la información comprendida entre las etiquetas DIV.-->
+<!----------------------------->
+<!--INICIO DE LOS RESULTADOS DEL ASISTENTE PARA PUBLICAR COMO P�?GINA WEB DE
+EXCEL -->
+<!----------------------------->
+
+<div id="Mapping TED XML to ePO_16633" align=center x:publishsource="Excel">
+
+<table border=0 cellpadding=0 cellspacing=0 width=4307 style='border-collapse:
+ collapse;table-layout:fixed;width:3232pt'>
+ <col width=143 style='mso-width-source:userset;mso-width-alt:5229;width:107pt'>
+ <col class=xl6616633 width=557 style='mso-width-source:userset;mso-width-alt:
+ 20370;width:418pt'>
+ <col width=21 style='mso-width-source:userset;mso-width-alt:768;width:16pt'>
+ <col width=716 style='mso-width-source:userset;mso-width-alt:26185;width:537pt'>
+ <col width=41 style='mso-width-source:userset;mso-width-alt:1499;width:31pt'>
+ <col width=268 style='mso-width-source:userset;mso-width-alt:9801;width:201pt'>
+ <col width=100 style='mso-width-source:userset;mso-width-alt:3657;width:75pt'>
+ <col width=68 style='mso-width-source:userset;mso-width-alt:2486;width:51pt'>
+ <col width=401 style='mso-width-source:userset;mso-width-alt:14665;width:301pt'>
+ <col width=68 style='mso-width-source:userset;mso-width-alt:2486;width:51pt'>
+ <col width=80 span=3 style='width:60pt'>
+ <col width=401 span=4 style='mso-width-source:userset;mso-width-alt:14665;
+ width:301pt'>
+ <col width=80 style='width:60pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 width=143 style='height:15.0pt;width:107pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt'></td>
+  <td class=xl1516633 width=21 style='width:16pt'></td>
+  <td class=xl1516633 width=716 style='width:537pt'></td>
+  <td class=xl1516633 width=41 style='width:31pt'></td>
+  <td class=xl1516633 width=268 style='width:201pt'></td>
+  <td class=xl1516633 width=100 style='width:75pt'></td>
+  <td class=xl1516633 width=68 style='width:51pt'></td>
+  <td class=xl1516633 width=401 style='width:301pt'></td>
+  <td class=xl1516633 width=68 style='width:51pt'></td>
+  <td class=xl1516633 width=80 style='width:60pt'></td>
+  <td class=xl1516633 width=80 style='width:60pt'></td>
+  <td class=xl1516633 width=80 style='width:60pt'></td>
+  <td class=xl1516633 width=401 style='width:301pt'></td>
+  <td class=xl1516633 width=401 style='width:301pt'></td>
+  <td class=xl1516633 width=401 style='width:301pt'></td>
+  <td class=xl1516633 width=401 style='width:301pt'></td>
+  <td class=xl1516633 width=80 style='width:60pt'></td>
+ </tr>
+ <tr height=47 style='mso-height-source:userset;height:35.25pt'>
+  <td height=47 class=xl1516633 style='height:35.25pt'></td>
+  <td colspan=3 class=xl7216633 width=1294 style='width:971pt'>Mapping of the
+  form TED XML - F03_2014 into the ePOntology</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=25 style='height:18.75pt'>
+  <td height=25 class=xl1516633 style='height:18.75pt'></td>
+  <td class=xl7016633 width=557 style='width:418pt;font-size:14.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;border-top:.5pt solid black;border-right:none;
+  border-bottom:.5pt solid black;border-left:none'>TED XML - F03_2014</td>
+  <td class=xl7016633 width=21 style='width:16pt;font-size:14.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;border-top:.5pt solid black;border-right:none;
+  border-bottom:.5pt solid black;border-left:none'>.</td>
+  <td class=xl7016633 width=716 style='width:537pt;font-size:14.0pt;color:black;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;border-top:.5pt solid black;border-right:none;
+  border-bottom:.5pt solid black;border-left:none'>ePO</td>
+  <td class=xl6816633 width=41 style='width:31pt'></td>
+  <td class=xl6816633 width=268 style='width:201pt'></td>
+  <td class=xl6816633 width=100 style='width:75pt'></td>
+  <td class=xl6816633 width=68 style='width:51pt'></td>
+  <td class=xl6816633 width=401 style='width:301pt'></td>
+  <td class=xl6816633 width=68 style='width:51pt'></td>
+  <td class=xl6816633 width=80 style='width:60pt'></td>
+  <td class=xl6816633 width=80 style='width:60pt'></td>
+  <td class=xl6816633 width=80 style='width:60pt'></td>
+  <td class=xl6816633 width=401 style='width:301pt'></td>
+  <td class=xl6816633 width=401 style='width:301pt'></td>
+  <td class=xl6816633 width=401 style='width:301pt'></td>
+  <td class=xl6816633 width=401 style='width:301pt'></td>
+  <td class=xl6816633 width=80 style='width:60pt'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY
+  [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>ProcuringEntity</td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity/vcard:Individual</td>
+  <td class=xl6316633></td>
+  <td class=xl6716633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/OFFICIALNAME</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcuringEntity
+  skos:prefLabel xsd:String</td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/NATIONALID</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity org:identifier xsd:normalizedString</td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/ADDRESS</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcuringEntity/vcard:Individual/vcard:address
+  vcard:street-address xsd:String</td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/TOWN</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity/vcard:Individual/vcard:address
+  vcard:locality xsd:String</td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6416633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/POSTAL_CODE</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcuringEntity/vcard:Individual/vcard:address
+  vcard:postal-code xsd:String</td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl6416633></td>
+  <td class=xl7116633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/COUNTRY</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity/vcard:Individual/vcard:address
+  vcard:country-name euvoc:country</td>
+  <td class=xl6316633></td>
+  <td class=xl6716633></td>
+  <td class=xl6416633></td>
+  <td class=xl7116633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/PHONE</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcuringEntity/vcard:Individual
+  vcard:hasTelephone vcard:Cell</td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/E_MAIL</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity/vcard:Individual/vcard:address
+  vcard:hasEmail xsd:String</td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/FAX</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcuringEntity/vcard:Individual
+  vcard:hasTelephone vcard:Fax</td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6316633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/NUTS</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity/vcard:Individual vcard:region
+  xsd:String</td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6416633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/URL_GENERAL</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6416633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY/URL_BUYER</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity :hasBuyerProfile :BuyerProfile</td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6416633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY/ADDRESS_CONTRACTING_BODY_ADDITIONAL
+  [0..199]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcuringEntity
+  :isJointProcurement :ProcuringEntity</td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6416633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/JOINT_PROCUREMENT_INVOLVED [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity :usesJointProcurementEntityRoleType
+  epo-rd:JointProcurementEntityRoleType</td>
+  <td class=xl6316633></td>
+  <td class=xl6716633></td>
+  <td class=xl6416633></td>
+  <td class=xl6716633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY/PROCUREMENT_LAW
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6416633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl6916633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/CENTRAL_PURCHASING [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity :usesProcuringEntityRoleType
+  epo-rd:ProcuringEntityRoleType</td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6416633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>CONTRACTING_BODY/CA_TYPE
+  OR CA_TYPE_OTHER [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcuringEntity
+  :usesJurisdictionalCompetenceLevelType
+  epo-rd:JurisdictionalCompetenceLevelType</td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6416633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>CONTRACTING_BODY/CA_ACTIVITY OR CA_ACTIVITY_OTHER
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcuringEntity :usesMainActivityTaxonomy
+  epo-rd:MainActivityTaxonomy</td>
+  <td class=xl6316633></td>
+  <td class=xl7116633></td>
+  <td class=xl6416633></td>
+  <td class=xl6316633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT [1..1000]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcurementProcedure</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/TITLE
+  [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcurementProcedure
+  :hasProcurementProjectTitle xsd:string</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/CPV_MAIN [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:Purpose (when ProcurementProcedure) :hasCPVType
+  :CPVType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/TYPE_CONTRACT
+  [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:Purpose
+  (when ProcurementProcedure) :usesContractNatureType :ContractNatureCodeType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/SHORT_DESCR [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcurementProcedure :hasProcurementProjectDescription
+  xsd:string</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/REFERENCE_NUMBER
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcurementProcedure
+  :hasProcurementProjectIdentifier ccts:Identifier</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/VAL_TOTAL [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcurementValue (when ProcurementProcedure)
+  :hasTotalAmount ccts:Amount</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/VAL_RANGE_TOTAL
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcurementValue
+  (when ProcurementProcedure) :hasMaximumAmount ccts:Amount</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/LOT_DIVISION OR NO_LOT_DIVISION [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcurementProcedure :refersToLot :Lot</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/OBJECT_DESCR
+  [at least 1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:Lot</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/OBJECT_DESCR/TITLE [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:Lot :hasProcurementProjectTitle xsd:string</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/OBJECT_DESCR/LOT_NO
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/OBJECT_DESCR/CPV_ADDITIONAL
+  [0..100]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:Purpose (when Lot) :hasCPVType :CPVType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/OBJECT_DESCR/NUTS
+  [1..20]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:Purpose
+  (when :Lot) :hasPlacePerformance epo-rd:Country</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/OBJECT_DESCR/MAIN_SITE [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/OBJECT_DESCR/SHORT_DESCR
+  [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:Lot
+  :hasProcurementProjectDescription xsd:string</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_CRITERION
+  [0..20]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:AwardCriterion :hasCriterionDescription xsd:String</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/OBJECT_DESCR/AC_QUALITY/AC_WEIGHTING
+  [0..20]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:AwardCriterion
+  :usesEvaluationMethodType :EvaluationMethodType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/OBJECT_DESCR/AC_COST/AC_CRITERION
+  [1..20]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:AwardCriterion :hasCriterionDescription xsd:String</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/OBJECT_DESCR/AC_COST/AC_WEIGHTING
+  [1..20]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:AwardCriterion
+  :usesEvaluationMethodType :EvaluationMethodType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>OBJECT_CONTRACT/OBJECT_DESCR/AC_PRICE/AC_WEIGHTING
+  [1..20]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:AwardCriterion :usesEvaluationMethodType
+  :EvaluationMethodType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/OBJECT_DESCR/OPTIONS
+  AND OPTIONS_DESCR [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:Purpose
+  (when :Lot) :hasPurposeOptions xsd:Boolean</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>OBJECT_CONTRACT/OBJECT_DESCR/EU_PROG_RELATED OR
+  NO_EU_PROGR_RELATED [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:FundsIdentification :hasEUFunds xsd:boolean</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>OBJECT_CONTRACT/OBJECT_DESCR/INFO_ADD
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>PROCEDURE
+  [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>PROCEDURE/Procedure type [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcurementProcedure :usesProcurementProcedureType
+  epo-rd:ProcurementProcedureTyp</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_ACCORDANCE_ARTICLE
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ContractAwardNotice
+  :hasNegotiatedProcedureJustificationType
+  epo-rd:NegotiatedProcedureJustificationType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>PROCEDURE/PT_AWARD_CONTRACT_WITHOUT_CALL/D_JUSTIFICATION
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcurementProcedure :hasProcedureChoiceJustification
+  xsd:string</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>PROCEDURE/FRAMEWORK
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:FrameworkAgreement</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>PROCEDURE/DPS [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:DynamicPurchaseSystem</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>PROCEDURE/EAUCTION_USED
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:Eauction</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>PROCEDURE/CONTRACT_COVERED_GPA OR
+  NO_CONTRACT_COVERED_GPA [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcurementProcedure :hasGPAusage xsd:boolean</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>PROCEDURE/NOTICE_NUMBER_OJ
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcuringEntity
+  org:identifier xsd:normalizedString</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>PROCEDURE/TERMINATION_DPS [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcurementProcedure :usesTerminationType
+  epo-rd:TerminationType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>PROCEDURE/TERMINATION_PIN
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcurementProcedure
+  :usesTerminationType epo-rd:TerminationType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT
+  [1..1000]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/CONTRACT_NO [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:Contract ccts:Identifier</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/LOT_NO
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:Contract
+  :refersToLot :Lot</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/TITLE [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:Contract :hasTitle xsd:String</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/NO_AWARDED_CONTRACT
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:EvaluationResult
+  :hasNoResultReason xsd:String</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/AWARDED_CONTRACT [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/AWARDED_CONTRACT/DATE_CONCLUSION_CONTRACT
+  [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:AwardResult
+  :hasAwardResultDateOfConclusion xsd:Date</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED
+  [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcedureStatistics :hasEUReceivedTenders
+  xsd:nonNegativeInteger</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED_SME
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcedureStatistics
+  :hasSMEReceivedTenders xsd:nonNegativeInteger</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED_OTHER_EU
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcedureStatistics :hasEEAReceivedTenders
+  xsd:nonNegativeInteger</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED_NON_EU
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcedureStatistics
+  :hasNonEUReceivedTenders xsd:nonNegativeInteger</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/AWARDED_CONTRACT/NB_TENDERS_RECEIVED_EMEANS
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcedureStatistics :hasEMeansReceivedTenders
+  xsd:nonNegativeInteger</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl1516633 style='height:30.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/AWARDED_CONTRACT/AWARDED_TO_GROUP
+  or NO_AWRADED_TO_GROUP[0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:AwardResult
+  :hasWinner :Winner</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:Winner</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/ADDRESS_CONTRACTOR</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:Winner
+  org:hasRegisteredSite vcard:Individual</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/AWARDED_CONTRACT/CONTRACTOR/SME or
+  NO_SME</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:Winner :usesEOIndustryClassificationType
+  :EOIndustryClassificationType</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/AWARDED_CONTRACT/VAL_ESTIMATED_TOTAL
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcurementValue
+  :hasTotalAmount xsd:Decimal</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/AWARDED_CONTRACT/VAL_TOTAL [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcurementValue :hasTotalAmount xsd:Decimal</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/AWARDED_CONTRACT/VAL_RANGE_TOTAL
+  [1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcurementValue
+  :hasMinimumAmount ccts:Amount or :hasMaximumAmount ccts:Amount</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/AWARDED_CONTRACT/LIKELY_SUBCONTRACTED
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl6516633>Not implemented</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/AWARDED_CONTRACT/VAL_SUBCONTRACTING
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl6516633 style='font-size:11.0pt;color:black;font-style:italic;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>Not
+  implemented</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>AWARD_CONTRACT/AWARDED_CONTRACT/PCT_SUBCONTRACTING
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl6516633>Not implemented</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>AWARD_CONTRACT/AWARDED_CONTRACT/INFO_ADD_SUBCONTRACTING
+  [0..1]</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl6516633 style='font-size:11.0pt;color:black;font-style:italic;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>Not
+  implemented</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>COMPLEMENTARY_INFO</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>COMPLEMENTARY_INFO/INFO_ADD</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>COMPLEMENTARY_INFO/ADDRESS_REVIEW_BODY</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcedureTerms
+  :hasReviewOrganisation org:Organization</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>COMPLEMENTARY_INFO/ADDRESS_MEDIATION_BODY</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcedureTerms :hasMediationOrganisation
+  org:Organization</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>COMPLEMENTARY_INFO/REVIEW_PROCEDURE</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;background:#D9D9D9;mso-pattern:#D9D9D9 none'>:ProcedureTerms
+  :reviewDeadlineDescription xsd:String</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri'>COMPLEMENTARY_INFO/ADDRESS_REVIEW_INFO</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri'>:ProcedureTerms :hasReviewService org:Organization</td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl1516633 style='height:15.0pt'></td>
+  <td class=xl6616633 width=557 style='width:418pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:Calibri;border-top:none;border-right:none;border-bottom:
+  .5pt solid black;border-left:none;background:#D9D9D9;mso-pattern:#D9D9D9 none'>COMPLEMENTARY_INFO/DATE_DISPATCH_NOTICE</td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;border-top:none;border-right:none;border-bottom:.5pt solid black;
+  border-left:none;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633 style='font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:Calibri;border-top:none;border-right:none;border-bottom:.5pt solid black;
+  border-left:none;background:#D9D9D9;mso-pattern:#D9D9D9 none'></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+  <td class=xl1516633></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=143 style='width:107pt'></td>
+  <td width=557 style='width:418pt'></td>
+  <td width=21 style='width:16pt'></td>
+  <td width=716 style='width:537pt'></td>
+  <td width=41 style='width:31pt'></td>
+  <td width=268 style='width:201pt'></td>
+  <td width=100 style='width:75pt'></td>
+  <td width=68 style='width:51pt'></td>
+  <td width=401 style='width:301pt'></td>
+  <td width=68 style='width:51pt'></td>
+  <td width=80 style='width:60pt'></td>
+  <td width=80 style='width:60pt'></td>
+  <td width=80 style='width:60pt'></td>
+  <td width=401 style='width:301pt'></td>
+  <td width=401 style='width:301pt'></td>
+  <td width=401 style='width:301pt'></td>
+  <td width=401 style='width:301pt'></td>
+  <td width=80 style='width:60pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+
+<!----------------------------->
+<!--FINAL DE LOS RESULTADOS DEL ASISTENTE PARA PUBLICAR COMO P�?GINA WEB DE
+EXCEL-->
+<!----------------------------->
+</body>
+
 </html>
+
