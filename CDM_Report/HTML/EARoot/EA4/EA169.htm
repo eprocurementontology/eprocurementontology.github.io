@@ -134,7 +134,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA281.htm">Review Terms</a><br />
+						<a href="EA282.htm">Review Terms</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -157,15 +157,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA152.htm">Award Decision</a><br />
+						<a href="EA270.htm">Procurement Value</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> is notified in contract award notice<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> notifies award result<br />
+						<strong>Name:</strong> hasTotalValue<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -173,7 +173,32 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink233" onclick="parent.toggleDiv('detailsDIVLink233','DetailsImageLink233')" />Details:
 							<div id="detailsDIVLink233" class="DetailsDiv" >
-							&nbsp;
+							<div class="ObjectDetailsNotes">The value of all lots awarded for this notice, including options and renewals and excluding framework agreement.&lt;br/&gt;&lt;br/&gt;Additional information&lt;br/&gt;Lots under a framework agreement are not to be added.&lt;br/&gt;&lt;br/&gt;The values of the individual lots announced in a CAN are to be traced back and added to provide this value.&lt;br/&gt;&lt;br/&gt;The path to get the value of an individual Lot is:&lt;br/&gt;&lt;br/&gt;CAN isA Notice ,&lt;br/&gt;CAN notifiesAwardResult AwardDecision ,&lt;br/&gt;AwardDecision refersTo Lot ,&lt;br/&gt;hasAwardedValue ProcurementValue .&lt;br/&gt;&lt;br/&gt;WG waiting for discussion and final decision with eForms.&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA270.htm">Procurement Value</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> hasTotalFrameworkValue<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink234" onclick="parent.toggleDiv('detailsDIVLink234','DetailsImageLink234')" />Details:
+							<div id="detailsDIVLink234" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The total value of all the framework agreements announced in this notice, including options and renewals of contracts.&lt;br/&gt;&lt;br/&gt;Additional information&lt;br/&gt;&lt;br/&gt;This excludes the values of the Lots that are not covered by a Framework Agreement and that are also announced in this Notice.&lt;br/&gt;&lt;br/&gt;The Framework Agreements in a CAN are to be traced back and added to provide this value. The path to get the value of an individual Framework Agreement is:&lt;br/&gt;&lt;br/&gt;CAN isA Notice,&lt;br/&gt;CAN notifiesAwardResult AwardDecision,&lt;br/&gt;AwardDecision refersTo Lot,&lt;br/&gt;Lot uses Technique, &lt;br/&gt;FrameworkAgreement isA Technique,&lt;br/&gt;FrameworkAgreement hasAwardedValue ProcurementValue .&lt;br/&gt;&lt;br/&gt;WG waiting for consultation to eForms and final decision.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
+
 							</div>
 						</div>
 					</td>
@@ -194,8 +219,31 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink234" onclick="parent.toggleDiv('detailsDIVLink234','DetailsImageLink234')" />Details:
-							<div id="detailsDIVLink234" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink235" onclick="parent.toggleDiv('detailsDIVLink235','DetailsImageLink235')" />Details:
+							<div id="detailsDIVLink235" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA152.htm">Award Decision</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> is notified in contract award notice<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> notifies award result<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink236" onclick="parent.toggleDiv('detailsDIVLink236','DetailsImageLink236')" />Details:
+							<div id="detailsDIVLink236" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -227,8 +275,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink235" onclick="parent.toggleDiv('detailsDIVLink235','DetailsImageLink235')" />Details:
-							<div id="detailsDIVLink235" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink237" onclick="parent.toggleDiv('detailsDIVLink237','DetailsImageLink237')" />Details:
+							<div id="detailsDIVLink237" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
