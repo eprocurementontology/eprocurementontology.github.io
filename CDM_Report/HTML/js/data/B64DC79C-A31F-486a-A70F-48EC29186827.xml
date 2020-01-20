@@ -1,6 +1,6 @@
-tocTab[tocTab.length] = new Array("0.3:1", "", "Core Public Organisation Vocabulary", "EARoot/EA3/EA132.htm", "175.png", "76", "0", "", "Logical diagram0","{4937243E-B0F6-49e4-B1EC-F57C16F9FC99}");
-tocTab[tocTab.length] = new Array("0.3:2", "", "Address", "EARoot/EA3/EA135.htm", "5.png", "E912", "0", "", "Class0","{05EF8E27-5801-4c1f-9C47-2BD510D8F44F}");
-tocTab[tocTab.length] = new Array("0.3:3", "", "ContactPoint", "EARoot/EA3/EA136.htm", "5.png", "E903", "0", "", "Class0","{19F4FA82-2C75-497d-BF8E-25F777888FFC}");
-tocTab[tocTab.length] = new Array("0.3:4", "", "«Image» core_public_organisation_vocabulary_version_1.0.0.png", "EARoot/EA3/EA137.htm", "82.png", "E901", "0", "", "Artifact0","{5D15F019-1264-4c60-9560-E6976276FBCE}");
-tocTab[tocTab.length] = new Array("0.3:5", "", "OpeningHoursSpecification", "EARoot/EA3/EA138.htm", "5.png", "E928", "0", "", "Class0","{0833B9AF-B48D-4a5a-8465-3B0570FD8D39}");
-tocTab[tocTab.length] = new Array("0.3:6", "", "PublicOrganization", "EARoot/EA3/EA139.htm", "5.png", "E902", "0", "", "Class0","{A8ABDDF6-8844-4086-8CDE-7108C707ABE7}");
+tocTab[tocTab.length] = new Array("0.1.3:1", "", "Core Public Organisation Vocabulary", "EARoot/EA1/EA3/EA134.htm", "175.png", "76", "0", "", "Logical diagram0","{4937243E-B0F6-49e4-B1EC-F57C16F9FC99}");
+tocTab[tocTab.length] = new Array("0.1.3:2", "", "Address", "EARoot/EA1/EA3/EA137.htm", "5.png", "E912", "0", "", "Class0","{05EF8E27-5801-4c1f-9C47-2BD510D8F44F}");
+tocTab[tocTab.length] = new Array("0.1.3:3", "", "ContactPoint", "EARoot/EA1/EA3/EA138.htm", "5.png", "E903", "0", "", "Class0","{19F4FA82-2C75-497d-BF8E-25F777888FFC}");
+tocTab[tocTab.length] = new Array("0.1.3:4", "", "«Image» core_public_organisation_vocabulary_version_1.0.0.png", "EARoot/EA1/EA3/EA139.htm", "82.png", "E901", "0", "", "Artifact0","{5D15F019-1264-4c60-9560-E6976276FBCE}");
+tocTab[tocTab.length] = new Array("0.1.3:5", "", "OpeningHoursSpecification", "EARoot/EA1/EA3/EA140.htm", "5.png", "E928", "0", "", "Class0","{0833B9AF-B48D-4a5a-8465-3B0570FD8D39}");
+tocTab[tocTab.length] = new Array("0.1.3:6", "", "PublicOrganization", "EARoot/EA1/EA3/EA141.htm", "5.png", "E902", "0", "", "Class0","{A8ABDDF6-8844-4086-8CDE-7108C707ABE7}");
