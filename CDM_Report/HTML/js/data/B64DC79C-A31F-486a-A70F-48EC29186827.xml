@@ -1,8 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1.4:1", "", "Core Public Organisation Vocabulary", "EARoot/EA1/EA4/EA137.htm", "175.png", "76", "0", "", "Logical diagram0","{4937243E-B0F6-49e4-B1EC-F57C16F9FC99}");
-tocTab[tocTab.length] = new Array("0.1.4:2", "", "Address", "EARoot/EA1/EA4/EA140.htm", "5.png", "E912", "0", "", "Class0","{05EF8E27-5801-4c1f-9C47-2BD510D8F44F}");
-tocTab[tocTab.length] = new Array("0.1.4:3", "", "Agent", "EARoot/EA1/EA4/EA141.htm", "5.png", "E937", "0", "", "Class0","{8056ECA0-B15A-4770-88F3-9068B8F5FEBF}");
-tocTab[tocTab.length] = new Array("0.1.4:4", "", "ContactPoint", "EARoot/EA1/EA4/EA142.htm", "5.png", "E929", "0", "", "Class0","{05B00567-F82A-4bd6-BCCC-4705681DA6BE}");
-tocTab[tocTab.length] = new Array("0.1.4:5", "", "«Image» core_public_organisation_vocabulary_version_1.0.0.png", "EARoot/EA1/EA4/EA143.htm", "82.png", "E901", "0", "", "Artifact0","{5D15F019-1264-4c60-9560-E6976276FBCE}");
-tocTab[tocTab.length] = new Array("0.1.4:6", "", "OpeningHoursSpecification", "EARoot/EA1/EA4/EA144.htm", "5.png", "E928", "0", "", "Class0","{0833B9AF-B48D-4a5a-8465-3B0570FD8D39}");
-tocTab[tocTab.length] = new Array("0.1.4:7", "", "Organization", "EARoot/EA1/EA4/EA145.htm", "5.png", "E902", "0", "", "Class0","{A8ABDDF6-8844-4086-8CDE-7108C707ABE7}");
-tocTab[tocTab.length] = new Array("0.1.4:8", "", "System", "EARoot/EA1/EA4/EA146.htm", "5.png", "E941", "0", "", "Class0","{C425B11C-2FB0-4cf1-A7FB-85C7579B3973}");
