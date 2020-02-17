@@ -1,5 +1,0 @@
-tocTab[tocTab.length] = new Array("0.13:1", "", "Address Line", "EARoot/EA13/EA402.htm", "5.png", "E626", "0", "", "Class0","{DC7E51B2-6B57-45cc-9CF5-95418C88665C}");
-tocTab[tocTab.length] = new Array("0.13:2", "", "Country", "EARoot/EA13/EA403.htm", "5.png", "E624", "0", "", "Class0","{F4B1BCEA-95D3-4f60-B803-BC34C668D6B4}");
-tocTab[tocTab.length] = new Array("0.13:3", "", "DocumentReference", "EARoot/EA13/EA404.htm", "5.png", "E852", "0", "", "Class0","{81A7652B-ECBF-466d-ACC1-C31D57595594}");
-tocTab[tocTab.length] = new Array("0.13:4", "", "Location Coordinate", "EARoot/EA13/EA405.htm", "5.png", "E627", "0", "", "Class0","{6CBBB5EC-83A3-4670-858D-59EBE773040C}");
-tocTab[tocTab.length] = new Array("0.13:5", "", "Period", "EARoot/EA13/EA406.htm", "5.png", "E349", "0", "", "Class0","{116B30E9-5947-4510-847A-7E8C5EEC0432}");
