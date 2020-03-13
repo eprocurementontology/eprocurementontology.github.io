@@ -1,9 +1,0 @@
-tocTab[tocTab.length] = new Array("0.1", "1", "eProcurement Ontology - OP Domain Model", "EARoot/EA1/EA63.htm", "31.png", "", "", "{6B65084A-798D-4f35-BA8F-EF75ACEBC684}", "Package");
-tocTab[tocTab.length] = new Array("0.2", "1", "cv-common", "EARoot/EA2/EA418.htm", "31.png", "", "", "{49BA825D-5523-409f-A80F-979ACB1356D1}", "Package");
-tocTab[tocTab.length] = new Array("0.3", "1", "foaf", "EARoot/EA3/EA499.htm", "31.png", "", "", "{79B04B9B-7CB8-446d-BF1E-FB411F8E1D25}", "Package");
-tocTab[tocTab.length] = new Array("0.4", "1", "org", "EARoot/EA4/EA510.htm", "31.png", "", "", "{C73C3BE9-11A4-4b3f-AC7C-F7614C26D411}", "Package");
-tocTab[tocTab.length] = new Array("0.5", "1", "DCAT-AP", "EARoot/EA5/EA518.htm", "31.png", "", "", "{855A720B-2257-4373-A4DC-0EDB344CA746}", "Package");
-tocTab[tocTab.length] = new Array("0.6", "1", "Location", "EARoot/EA6/EA525.htm", "31.png", "", "", "{D8233597-CDFB-408d-8BD6-5D7CA0F1423E}", "Package");
-tocTab[tocTab.length] = new Array("0.7", "1", "rov", "EARoot/EA7/EA531.htm", "31.png", "", "", "{C9C81597-B0D9-46a3-A7FD-A79A118C055F}", "Package");
-tocTab[tocTab.length] = new Array("0.8", "1", "CCCEV", "EARoot/EA8/EA545.htm", "31.png", "", "", "{676DC919-4BA4-415e-9F16-54DD03A4C110}", "Package");
-tocTab[tocTab.length] = new Array("0.9", "1", "ubl-2.3", "EARoot/EA9/EA569.htm", "31.png", "", "", "{DB64B238-5271-4347-A7E9-8C3FF41B2AAB}", "Package");

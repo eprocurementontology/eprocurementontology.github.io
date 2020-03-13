@@ -1,6 +1,0 @@
-tocTab[tocTab.length] = new Array("0.8:1", "", "1. Overview (simplified)", "EARoot/EA8/EA535.htm", "175.png", "99", "0", "", "Logical diagram0","{A5CC03C2-922B-4ed7-B42F-A4CAA33D439E}");
-tocTab[tocTab.length] = new Array("0.8:2", "", "2. Overview (detailed)", "EARoot/EA8/EA537.htm", "175.png", "97", "0", "", "Logical diagram0","{964DADEB-AB62-439c-B144-AC8DC23BECFB}");
-tocTab[tocTab.length] = new Array("0.8:3", "", "3. Weights, thresholds, formulae (conceptual)", "EARoot/EA8/EA539.htm", "175.png", "98", "0", "", "Logical diagram0","{F1D32FA4-015B-423e-9F1C-D9323B50C1D9}");
-tocTab[tocTab.length] = new Array("0.8:4", "", "4. ApplicationResponse", "EARoot/EA8/EA541.htm", "175.png", "101", "0", "", "Logical diagram0","{114CA0BF-4D26-49de-9A58-9CAEBBA811B9}");
-tocTab[tocTab.length] = new Array("0.8:5", "", "Asset", "EARoot/EA8/EA543.htm", "175.png", "100", "0", "", "Logical diagram0","{D69B0237-6FFA-42a7-8FFC-6CBF7A6F03F5}");
-tocTab[tocTab.length] = new Array("0.8.1", "1", "cccev", "EARoot/EA8/EA1/EA555.htm", "4.png", "", "", "{83CE1E47-CA10-4a55-BC05-98619BC2BC55}", "Package");
