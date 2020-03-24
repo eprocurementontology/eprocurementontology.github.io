@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>OfferedValue_And_AwardedValue</title>
+<title>Procurement Criterion</title>
 <link href="../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -36,26 +36,35 @@ function nameClassifier(name, separator)
 <img src="EA40.png" usemap="#EA40" border="0" />
 
 <MAP NAME="EA40">
-<area shape="rect" coords="973,512,1156,617" href="./EA5/EA282.htm" target="_self">
-<area shape="rect" coords="10,219,178,307" href="./EA5/EA179.htm" target="_self">
-<area shape="rect" coords="49,715,147,785" href="./EA5/EA278.htm" target="_self">
-<area shape="rect" coords="914,701,1021,793" href="./EA5/EA230.htm" target="_self">
-<area shape="rect" coords="310,710,550,792" href="./EA5/EA276.htm" target="_self">
-<area shape="rect" coords="28,531,160,601" href="./EA5/EA284.htm" target="_self">
-<area shape="rect" coords="748,532,903,602" href="./EA5/EA218.htm" target="_self">
-<area shape="rect" coords="358,531,510,619" href="./EA5/EA280.htm" target="_self">
-<area shape="rect" coords="350,147,509,388" href="./EA5/EA229.htm" target="_self">
+<area shape="rect" coords="709,10,874,81" href="EA65.htm" target="_self">
+<area shape="rect" coords="681,395,771,455" href="./EA1/EA266.htm" target="_self">
+<area shape="rect" coords="123,599,375,860" href="./EA1/EA192.htm" target="_self">
+<area shape="rect" coords="1055,795,1374,895" href="./EA1/EA257.htm" target="_self">
+<area shape="rect" coords="364,930,501,1015" href="./EA1/EA263.htm" target="_self">
+<area shape="rect" coords="1296,645,1453,769" href="./EA1/EA131.htm" target="_self">
+<area shape="rect" coords="1016,663,1116,743" href="./EA1/EA203.htm" target="_self">
+<area shape="rect" coords="540,1377,643,1475" href="./EA1/EA232.htm" target="_self">
+<area shape="rect" coords="1276,952,1473,1050" href="./EA1/EA251.htm" target="_self">
+<area shape="rect" coords="1548,1074,1768,1262" href="EA62.htm" target="_self">
+<area shape="rect" coords="1082,1074,1189,1166" href="./EA1/EA175.htm" target="_self">
+<area shape="rect" coords="1034,1324,1209,1396" href="./EA1/EA250.htm" target="_self">
+<area shape="rect" coords="10,1186,227,1323" href="./EA1/EA252.htm" target="_self">
+<area shape="rect" coords="634,517,818,545" href="./EA1/EA159.htm" target="_self">
+<area shape="rect" coords="775,913,989,1074" href="./EA1/EA209.htm" target="_self">
+<area shape="rect" coords="519,665,738,860" href="./EA1/EA194.htm" target="_self">
+<area shape="rect" coords="764,1110,983,1361" href="./EA1/EA122.htm" target="_self">
+<area shape="rect" coords="1217,1349,1400,1515" href="./EA1/EA174.htm" target="_self">
 </MAP>
 
-	<div class="ObjectTitle">OfferedValue_And_AwardedValue : Class diagram</div>
+	<div class="ObjectTitle">Procurement Criterion : Class diagram</div>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">17/12/2019 16:08:19</td>
+			<td width="85%" class="ObjectDetailsValue">28/05/2018 0:00:00</td>
 		</tr>
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
-			<td width="85%" class="ObjectDetailsValue">11/03/2020 12:08:38</td>
+			<td width="85%" class="ObjectDetailsValue">16/03/2020 15:49:22</td>
 		</tr>
 		<tr style="padding-top: 10px;">
 			<td width="15%" class="ObjectDetailsTopic"><img src="../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
@@ -63,7 +72,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td width="85%" class="ObjectDetailsValue">estaromi</td>
+			<td width="85%" class="ObjectDetailsValue">mfontsan</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -75,10 +84,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
-			<td width="85%" class="ObjectDetailsValue">{4EF02ED8-8A91-454b-A56E-2BCA23BDE041}</td>
+			<td width="85%" class="ObjectDetailsValue">{A17DEED6-E1F2-404c-B85E-F76B4C1CA6DC}</td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">&lt;ol&gt;<br />&lt;li&gt;Award Criteria are used to evaluate Tenders. They may include the best price-quality ratio, including qualitative, environmental and/or social aspects, linked to the subject-matter of the public contract in question.&lt;/li&gt;&lt;li&gt;Thus, an Award Criterion needs to be codified as lowest, most economic tender, mixed or other (for non-objective / qualitative criteria - see Criteria Taxonomy).&lt;/li&gt;&lt;li&gt;In two-phase procedures technical and financial criteria, used in the first phase for the selection, can be reused as weighted criteria to evaluate the Tenders.&lt;/li&gt;&lt;li&gt;Award Criterion is a class that specialises Criterion. The specialisation consists in providing a property to link the Criterion to Lot.&lt;/li&gt;&lt;li&gt;Award Criterion and Award Criterion Property, both need to link to Lot.&lt;/li&gt;&lt;li&gt;This is why the class Award Criterion needs to provide specialised sub-classes for the Criterion Property Group and Criterion Property, as well as the properties linking them.&lt;/li&gt;&lt;/ol&gt;<br />&lt;br/&gt;&lt;img src="../images/Legend.png.png" /&gt; &lt;br/&gt;</div>
+
 </div>
  
 </body>
