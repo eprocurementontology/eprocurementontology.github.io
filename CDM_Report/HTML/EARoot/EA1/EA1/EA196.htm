@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>epo::epo:ProcurementValue</title>
+<title>epo::epo:FinancialOfferValue</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("epo:ProcurementValue", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("epo:FinancialOfferValue", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">21/03/2018 20:25:26</td>
+			<td width="85%" class="ObjectDetailsValue">24/05/2019 15:33:57</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">11/03/2020 16:26:37</td>
+			<td class="ObjectDetailsValue">11/03/2020 16:22:09</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">lbotapor</td>
+			<td class="ObjectDetailsValue">estaromi</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,347 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{EF6D8DA9-F7F6-42e7-88CB-7C8DD20D663D}</td>
+			<td class="ObjectDetailsValue">{4267BBA6-04D9-4ff6-8662-CE7D91E7CB3C}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA37.htm">Procedure</a>, <a href="../EA31.htm">Lots</a>, <a href="../EA45.htm">Project Procurement </a>, <a href="../EA13.htm">Documents</a>, <a href="../EA7.htm">Contract</a>, <a href="../EA27.htm">Framework Agreement Terms</a>, <a href="../EA15.htm">eAward</a>, <a href="../EA55.htm">Values</a>, <a href="../EA35.htm">Planning</a>, <a href="../EA29.htm">Group Lot Framework Estimated Value</a>, <a href="../EA5.htm">Competition</a>, <a href="../EA11.htm">Direct Award Prenotification</a>, <a href="../EA47.htm">Result</a>, <a href="../EA9.htm">Contract Modification</a>, <a href="../EA23.htm">ePO Overview</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA53.htm">Tender</a>, <a href="../EA25.htm">Evaluation Result</a>, <a href="../EA49.htm">Submission</a>, <a href="../EA55.htm">Values</a>, <a href="../EA33.htm">OfferedValue_And_AwardedValue</a>, <a href="../EA11.htm">Direct Award Prenotification</a>, <a href="../EA47.htm">Result</a>, <a href="../EA9.htm">Contract Modification</a>, <a href="../EA23.htm">ePO Overview</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Monetary requirements established by the buyer related to a procurement.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;A value given for a group of lots may be different to the sum of the lots submitted individually (e.g. more advantageous).&lt;br/&gt;Separate classes are added in the ontology for different value types (e.g. Procurement Value, Financial Official Value, other) for tracking back the provenance and enabling the individual and total values to be cross-checked.&lt;br/&gt;&lt;br/&gt;WG Approval 28/05/2019&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Monetary amount for which the tenderer commits to fulfil a given part of the tender.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;In the case of negotiated procedure the Financial Offer Value provided by the Tenderer is adapted according to the negotiations with the Buyer.&lt;br/&gt;&lt;br/&gt;A value given for a group of lots may be different to the sum of the lots submitted individually (e.g. more advantageous).&lt;br/&gt;Separate classes are added in the ontology for different value types (e.g. Procurement Value, Financial Official Value, other) for tracking back the provenance and enabling the individual and total values to be cross-checked.&lt;br/&gt;&lt;br/&gt;WG Approval 28/05/2019&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
-			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
-<div class="ItemBody" id="AttributesTable">
-	<table border="0" cellspacing="0" cellpadding="0" class="Table">
-		<tr>
-			<td width="100%" class="TableHeading">Attribute</td>
-		</tr>
-						<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Amount</i><br /><strong>&nbsp;&nbsp;epo:OverallAmount</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes547')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes547" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes547_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes547_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes547_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes547_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes547_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes547_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes547_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes547_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			In the case of a procurement procedure it includes options and renewals.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Indicator</i><br /><strong>&nbsp;&nbsp;epo:TaxIncludedIndicator</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes548')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes548" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes548_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes548_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes548_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes548_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes548_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes548_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes548_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes548_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Amount</i><br /><strong>&nbsp;&nbsp;epo:MinimumAmount</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes549')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes549" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes549_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes549_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes549_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes549_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes549_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes549_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes549_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes549_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:CalculationMethod</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes550')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes550" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes550_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes550_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes550_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes550_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes550_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes550_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes550_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes550_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Formula for obtaining values.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;The possible values are monetary values, ranking scores, criterion weighting.&lt;br/&gt;&lt;br/&gt;WG Approval 25/05/2018&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Amount</i><br /><strong>&nbsp;&nbsp;epo:MaximumAmount</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes551')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes551" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes551_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes551_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes551_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes551_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes551_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes551_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes551_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes551_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The highest amount which can be spent within a procurement over its whole duration.&lt;br/&gt;&lt;br/&gt;WG Approval 11/10/2019&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:CurrencyType</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes552')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes552" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes552_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes552_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes552_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes552_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes552_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes552_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes552_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes552_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
-			</tr>
-	</table>
-</div>
 		<div class="ItemBody" id="AssociationsFromTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
@@ -437,7 +110,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA211.htm">epo:Subcontract</a><br />
+						<a href="EA266.htm">epo:TenderLot</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -445,31 +118,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasEstimatedValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink553" onclick="parent.toggleDiv('detailsDIVLink553','DetailsImageLink553')" />Details:
-							<div id="detailsDIVLink553" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The estimated value of the part of the contract to be subcontracted.&lt;br/&gt;&lt;br/&gt;WG Approval 08/05/2019&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA176.htm">epo:Lot</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasEstimatedUserConcessionRevenue<br />
+						<strong>Name:</strong> epo:has<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -477,271 +126,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink554" onclick="parent.toggleDiv('detailsDIVLink554','DetailsImageLink554')" />Details:
 							<div id="detailsDIVLink554" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The estimated revenue coming from the use of the concession.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;Revenues are for example fees and fines. For example, the fees and fines coming from the cars using a motorway.&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA176.htm">epo:Lot</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasAwardedEstimatedValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink555" onclick="parent.toggleDiv('detailsDIVLink555','DetailsImageLink555')" />Details:
-							<div id="detailsDIVLink555" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The estimated value that can be spent as provided by the Award Decision.&lt;br/&gt;&lt;br/&gt;&lt;u&gt;Additional Information&lt;/u&gt;:&lt;br/&gt;This property is used for framework agreements and dynamic purchasing systems. &lt;br/&gt;Different cases of awarded values may refer to a lot, the global value of the procedure, or of a combinatorial value of a group of lots.&lt;br/&gt;&lt;br/&gt;WG Approval 12/12/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA177.htm">epo:LotGroup</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasEstimatedValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink556" onclick="parent.toggleDiv('detailsDIVLink556','DetailsImageLink556')" />Details:
-							<div id="detailsDIVLink556" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">A forecast of the value of the procurement before competition.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;Different cases of estimated values may refer to a lot, the global value of the procedure, or of a combinatorial value of a group of lots.&lt;br/&gt;The forecast is calculated by the buyer and covers all revenues&#160;&#160;whether coming from the buyer or third parties.&lt;br/&gt;See for example recital (19), Article 5 of Directive 2014/24/EU and other articles from the rest of Directives about procurement.&lt;br/&gt;&lt;br/&gt;In the case of lots or groups of lots using framework agreements and dynamic purchasing systems this refers to the maximum estimated value.&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;WG Approval 05/12/2019&lt;/b&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA177.htm">epo:LotGroup</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasAwardedValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink557" onclick="parent.toggleDiv('detailsDIVLink557','DetailsImageLink557')" />Details:
-							<div id="detailsDIVLink557" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The value of the procurement provided by the Award Decision.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;Different cases of awarded values may refer to a lot, the global value of the procedure, or of a combinatorial value of a group of lots.&lt;br/&gt;&lt;br/&gt;In the case of framework agreements and dynamic purchasing systems this refers to the maximum awarded value.&lt;br/&gt;&lt;br/&gt;WG Approval 10/12/2019&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA176.htm">epo:Lot</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasAwardedMaximumValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink558" onclick="parent.toggleDiv('detailsDIVLink558','DetailsImageLink558')" />Details:
-							<div id="detailsDIVLink558" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The maximum value that can be spent as provided by the Award Decision.&lt;br/&gt;&lt;br/&gt;&lt;u&gt;Additional Information&lt;/u&gt;:&lt;br/&gt;This property is used for framework agreements and dynamic purchasing systems. &lt;br/&gt;Different cases of awarded values may refer to a lot, the global value of the procedure, or of a combinatorial value of a group of lots.&lt;br/&gt;&lt;br/&gt;WG Approval 12/12/2019&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA176.htm">epo:Lot</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasEstimatedValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink559" onclick="parent.toggleDiv('detailsDIVLink559','DetailsImageLink559')" />Details:
-							<div id="detailsDIVLink559" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">A forecast of the value of the procurement before competition.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;Different cases of estimated values may refer to a lot, the global value of the procedure, or of a combinatorial value of a group of lots.&lt;br/&gt;The forecast is calculated by the buyer and covers all revenues&#160;&#160;whether coming from the buyer or third parties.&lt;br/&gt;See for example recital (19), Article 5 of Directive 2014/24/EU and other articles from the rest of Directives about procurement.&lt;br/&gt;&lt;br/&gt;In the case of framework agreements and dynamic purchasing systems this refers to the maximum estimated value.&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;WG Approval 05/12/2019&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA130.htm">epo:ContractAwardNotice</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasTotalValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink560" onclick="parent.toggleDiv('detailsDIVLink560','DetailsImageLink560')" />Details:
-							<div id="detailsDIVLink560" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The value of all lots awarded for this notice, including options and renewals. &lt;br/&gt;&lt;br/&gt;Additional information:&lt;br/&gt;The values of the individual Lots awarded under a framework agreement and mentioned in this notice are included.&lt;br/&gt;&lt;br/&gt;The values of the individual lots announced in a CAN are to be traced back and added to provide this value.&lt;br/&gt;&lt;br/&gt;The path to get the value of an individual Lot is:&lt;br/&gt;&lt;br/&gt;CAN isA Notice ,&lt;br/&gt;CAN notifiesAwardResult AwardDecision ,&lt;br/&gt;AwardDecision refersTo Lot ,&lt;br/&gt;hasAwardedValue ProcurementValue .&lt;br/&gt;&lt;br/&gt;WG Approval 03/12/2019&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA130.htm">epo:ContractAwardNotice</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasTotalFrameworkValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink561" onclick="parent.toggleDiv('detailsDIVLink561','DetailsImageLink561')" />Details:
-							<div id="detailsDIVLink561" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The maximum value which can be spent through all the framework agreements announced in this notice, including options and renewals of contracts.&lt;br/&gt;&lt;br/&gt;Additional information:&lt;br/&gt;&lt;br/&gt;The value provided is a threshold value that implicity means that it cannot be exceeded however it may not be reached during the execution of a contract.&lt;br/&gt;&lt;br/&gt;The Framework Agreements in a CAN are to be traced back and added to provide this value. The path to get the value of an individual Framework Agreement is:&lt;br/&gt;&lt;br/&gt;CAN isA Notice,&lt;br/&gt;CAN notifiesAwardResult AwardDecision,&lt;br/&gt;AwardDecision refersTo Lot,&lt;br/&gt;Lot uses Technique, &lt;br/&gt;FrameworkAgreement isA Technique,&lt;br/&gt;FrameworkAgreement hasAwardedValue ProcurementValue .&lt;br/&gt;&lt;br/&gt;WG Approval 03/12/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA169.htm">epo:FrameworkAgreementTerms</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasOverallMaximumValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink562" onclick="parent.toggleDiv('detailsDIVLink562','DetailsImageLink562')" />Details:
-							<div id="detailsDIVLink562" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Establishes the maximum value for the Framework Agreement, either for the lots specified in the Framework Agreement Lots or for all the lots of the procedure.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA129.htm">epo:Contract</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasProcurementValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink563" onclick="parent.toggleDiv('detailsDIVLink563','DetailsImageLink563')" />Details:
-							<div id="detailsDIVLink563" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">At contract time, this procurement value may be different from the Procurement Value of a Lot or a Procedure that was announced.&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA176.htm">epo:Lot</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasEstimatedBuyerConcessionRevenue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink564" onclick="parent.toggleDiv('detailsDIVLink564','DetailsImageLink564')" />Details:
-							<div id="detailsDIVLink564" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The expected payments made by the buyer to the economic operator awarded the concession that are not directly related to the use of the concession.&lt;br/&gt;&lt;br/&gt;&lt;u&gt;Additional Information:&lt;/u&gt;&lt;br/&gt;For example the public buyer pays a yearly fee to provide a ticketing solution to the public.&#160;&#160;The fee the public pays for every ticket sold through the solution is not included in this estimation but in the estimation of the user concession revenue.&lt;br/&gt;&lt;br/&gt;WG Approval 07/01/2020&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA190.htm">epo:Procedure</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasEstimatedValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink565" onclick="parent.toggleDiv('detailsDIVLink565','DetailsImageLink565')" />Details:
-							<div id="detailsDIVLink565" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">A forecast of the value of the procurement before competition.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;Different cases of estimated values may refer to a lot, the global value of the procedure, or of a combinatorial value of a group of lots.&lt;br/&gt;The forecast is calculated by the buyer and covers all revenues&#160;&#160;whether coming from the buyer or third parties.&lt;br/&gt;See for example recital (19), Article 5 of Directive 2014/24/EU and other articles from the rest of Directives about procurement.&lt;br/&gt;&lt;br/&gt;In the case of framework agreements and dynamic purchasing systems this refers to the maximum estimated value.&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;WG Approval 05/12/2019&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">The value offered by the Tenderer for a Lot.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;This value is normally the one awarded for a winning Tender Lot. In case of negotiated procedures the original financial value may be reviewed and the offer updated.&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -760,16 +145,9 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA224.htm">«abstract class» epo:Value</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA268.htm">«abstract class» epo:Value</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA236.htm">euvocabularies:currency</a></td>
-					<td width="10%" class="TableRow" valign="top">Enumeration</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
