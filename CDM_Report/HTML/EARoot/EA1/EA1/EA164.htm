@@ -111,7 +111,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA227.htm">epo:PriorInformationNotice</a><br />
+						<a href="EA245.htm">epo:ReviewTerms</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -119,7 +119,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:refersTo<br />
+						<strong>Name:</strong> epo:has<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -157,29 +157,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA247.htm">epo:ReviewTerms</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:has<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink414" onclick="parent.toggleDiv('detailsDIVLink414','DetailsImageLink414')" />Details:
-							<div id="detailsDIVLink414" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="EA149.htm">epo:AwardDecision</a><br />
 						Class &nbsp;
 					</td>
@@ -194,8 +171,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink415" onclick="parent.toggleDiv('detailsDIVLink415','DetailsImageLink415')" />Details:
-							<div id="detailsDIVLink415" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink414" onclick="parent.toggleDiv('detailsDIVLink414','DetailsImageLink414')" />Details:
+							<div id="detailsDIVLink414" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -203,31 +180,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA236.htm">epo:ProcurementValue</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasTotalFrameworkValue<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink416" onclick="parent.toggleDiv('detailsDIVLink416','DetailsImageLink416')" />Details:
-							<div id="detailsDIVLink416" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The maximum value which can be spent through all the framework agreements announced in this notice, including options and renewals of contracts.&lt;br/&gt;&lt;br/&gt;Additional information:&lt;br/&gt;&lt;br/&gt;The value provided is a threshold value that implicity means that it cannot be exceeded however it may not be reached during the execution of a contract.&lt;br/&gt;&lt;br/&gt;The Framework Agreements in a CAN are to be traced back and added to provide this value. The path to get the value of an individual Framework Agreement is:&lt;br/&gt;&lt;br/&gt;CAN isA Notice,&lt;br/&gt;CAN notifiesAwardResult AwardDecision,&lt;br/&gt;AwardDecision refersTo Lot,&lt;br/&gt;Lot uses Technique, &lt;br/&gt;FrameworkAgreement isA Technique,&lt;br/&gt;FrameworkAgreement hasAwardedValue ProcurementValue .&lt;br/&gt;&lt;br/&gt;WG Approval 03/12/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA236.htm">epo:ProcurementValue</a><br />
+						<a href="EA237.htm">epo:ProcurementValue</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -241,9 +194,56 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink415" onclick="parent.toggleDiv('detailsDIVLink415','DetailsImageLink415')" />Details:
+							<div id="detailsDIVLink415" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The value of all lots awarded for this notice, including options and renewals. &lt;br/&gt;&lt;br/&gt;Additional information:&lt;br/&gt;The values of the individual Lots awarded under a framework agreement and mentioned in this notice are included.&lt;br/&gt;&lt;br/&gt;The values of the individual lots announced in a CAN are to be traced back and added to provide this value.&lt;br/&gt;&lt;br/&gt;The path to get the value of an individual Lot is:&lt;br/&gt;&lt;br/&gt;CAN isA Notice ,&lt;br/&gt;CAN notifiesAwardResult AwardDecision ,&lt;br/&gt;AwardDecision refersTo Lot ,&lt;br/&gt;hasAwardedValue ProcurementValue .&lt;br/&gt;&lt;br/&gt;WG Approval 03/12/2019&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA228.htm">epo:PriorInformationNotice</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:refersTo<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink416" onclick="parent.toggleDiv('detailsDIVLink416','DetailsImageLink416')" />Details:
+							<div id="detailsDIVLink416" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA237.htm">epo:ProcurementValue</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:hasTotalFrameworkValue<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink417" onclick="parent.toggleDiv('detailsDIVLink417','DetailsImageLink417')" />Details:
 							<div id="detailsDIVLink417" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The value of all lots awarded for this notice, including options and renewals. &lt;br/&gt;&lt;br/&gt;Additional information:&lt;br/&gt;The values of the individual Lots awarded under a framework agreement and mentioned in this notice are included.&lt;br/&gt;&lt;br/&gt;The values of the individual lots announced in a CAN are to be traced back and added to provide this value.&lt;br/&gt;&lt;br/&gt;The path to get the value of an individual Lot is:&lt;br/&gt;&lt;br/&gt;CAN isA Notice ,&lt;br/&gt;CAN notifiesAwardResult AwardDecision ,&lt;br/&gt;AwardDecision refersTo Lot ,&lt;br/&gt;hasAwardedValue ProcurementValue .&lt;br/&gt;&lt;br/&gt;WG Approval 03/12/2019&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">The maximum value which can be spent through all the framework agreements announced in this notice, including options and renewals of contracts.&lt;br/&gt;&lt;br/&gt;Additional information:&lt;br/&gt;&lt;br/&gt;The value provided is a threshold value that implicity means that it cannot be exceeded however it may not be reached during the execution of a contract.&lt;br/&gt;&lt;br/&gt;The Framework Agreements in a CAN are to be traced back and added to provide this value. The path to get the value of an individual Framework Agreement is:&lt;br/&gt;&lt;br/&gt;CAN isA Notice,&lt;br/&gt;CAN notifiesAwardResult AwardDecision,&lt;br/&gt;AwardDecision refersTo Lot,&lt;br/&gt;Lot uses Technique, &lt;br/&gt;FrameworkAgreement isA Technique,&lt;br/&gt;FrameworkAgreement hasAwardedValue ProcurementValue .&lt;br/&gt;&lt;br/&gt;WG Approval 03/12/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -295,7 +295,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA218.htm">«abstract class» epo:Notice</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA219.htm">«abstract class» epo:Notice</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>

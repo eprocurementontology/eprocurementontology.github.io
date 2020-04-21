@@ -342,7 +342,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA223.htm">epo:Period</a><br />
+						<a href="EA260.htm">epo:Tender</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -350,7 +350,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasEstimatedDuration<br />
+						<strong>Name:</strong> epo:refersTo<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -365,7 +365,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA223.htm">epo:Period</a><br />
+						<a href="EA215.htm">epo:LotGroup</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -373,7 +373,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasDuration<br />
+						<strong>Name:</strong> epo:refersTo<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -388,7 +388,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA262.htm">epo:Tender</a><br />
+						<a href="EA268.htm">epo:Winner</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -396,7 +396,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:refersTo<br />
+						<strong>Name:</strong> epo:refersToSignatory<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -411,15 +411,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA212.htm">epo:Lot</a><br />
+						<a href="EA224.htm">epo:Period</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isReferedByA<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:refersTo<br />
+						<strong>Name:</strong> epo:hasDuration<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -434,15 +434,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA236.htm">epo:ProcurementValue</a><br />
+						<a href="EA206.htm">epo:Fund</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
+						<strong>Name:</strong> epo:funds<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasProcurementValue<br />
+						<strong>Name:</strong> epo:isFundedBy<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -450,8 +450,31 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink399" onclick="parent.toggleDiv('detailsDIVLink399','DetailsImageLink399')" />Details:
 							<div id="detailsDIVLink399" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">At contract time, this procurement value may be different from the Procurement Value of a Lot or a Procedure that was announced.&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">Funds may change between the lot and the contract, for example in the case of an emergency crisis, a contract may be financed by a budget that was not foreseen in the call.&lt;br/&gt;&lt;br/&gt;</div>
 
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA224.htm">epo:Period</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:hasDurationEvaluationPeriod<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink400" onclick="parent.toggleDiv('detailsDIVLink400','DetailsImageLink400')" />Details:
+							<div id="detailsDIVLink400" class="DetailsDiv" >
+							&nbsp;
 							</div>
 						</div>
 					</td>
@@ -472,29 +495,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink400" onclick="parent.toggleDiv('detailsDIVLink400','DetailsImageLink400')" />Details:
-							<div id="detailsDIVLink400" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA223.htm">epo:Period</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasDurationEvaluationPeriod<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink401" onclick="parent.toggleDiv('detailsDIVLink401','DetailsImageLink401')" />Details:
 							<div id="detailsDIVLink401" class="DetailsDiv" >
 							&nbsp;
@@ -504,7 +504,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA270.htm">epo:Winner</a><br />
+						<a href="EA241.htm">epo:Purpose</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -512,7 +512,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:refersToSignatory<br />
+						<strong>Name:</strong> epo:hasContractPurpose<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -527,7 +527,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA240.htm">epo:Purpose</a><br />
+						<a href="EA224.htm">epo:Period</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -535,7 +535,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasContractPurpose<br />
+						<strong>Name:</strong> epo:hasEstimatedDuration<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -550,31 +550,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA204.htm">epo:Fund</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:funds<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isFundedBy<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink404" onclick="parent.toggleDiv('detailsDIVLink404','DetailsImageLink404')" />Details:
-							<div id="detailsDIVLink404" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Funds may change between the lot and the contract, for example in the case of an emergency crisis, a contract may be financed by a budget that was not foreseen in the call.&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA213.htm">epo:LotGroup</a><br />
+						<a href="EA237.htm">epo:ProcurementValue</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -582,7 +558,31 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:refersTo<br />
+						<strong>Name:</strong> epo:hasProcurementValue<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink404" onclick="parent.toggleDiv('detailsDIVLink404','DetailsImageLink404')" />Details:
+							<div id="detailsDIVLink404" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">At contract time, this procurement value may be different from the Procurement Value of a Lot or a Procedure that was announced.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA272.htm">epo:Agent</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:isSignedBy<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:isSignatoryPartyOf<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -597,15 +597,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA275.htm">epo:Agent</a><br />
+						<a href="EA214.htm">epo:Lot</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isSignedBy<br />
+						<strong>Name:</strong> epo:isReferedByA<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isSignatoryPartyOf<br />
+						<strong>Name:</strong> epo:refersTo<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -630,7 +630,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA180.htm">epo:eCatalogue</a><br />
+						<a href="EA165.htm">epo:ContractModificationNotice</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -638,7 +638,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:madeAvailableUnder<br />
+						<strong>Name:</strong> epo:modifies<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -653,15 +653,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA149.htm">epo:AwardDecision</a><br />
+						<a href="EA230.htm">epo:Procedure</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
+						<strong>Name:</strong> epo:concludes<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isReferedByA<br />
+						<strong>Name:</strong> epo:isConcludedBy<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -676,7 +676,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA229.htm">epo:Procedure</a><br />
+						<a href="EA230.htm">epo:Procedure</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -699,7 +699,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA165.htm">epo:ContractModificationNotice</a><br />
+						<a href="EA149.htm">epo:AwardDecision</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -707,7 +707,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:modifies<br />
+						<strong>Name:</strong> epo:isReferedByA<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -722,15 +722,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA229.htm">epo:Procedure</a><br />
+						<a href="EA180.htm">epo:eCatalogue</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:concludes<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isConcludedBy<br />
+						<strong>Name:</strong> epo:madeAvailableUnder<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -756,7 +756,14 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA239.htm">epo:PurchaseContract</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA200.htm">epo:FrameworkAgreement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA240.htm">epo:PurchaseContract</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
@@ -767,13 +774,6 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA200.htm">epo:FrameworkAgreement</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

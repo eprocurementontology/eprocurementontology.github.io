@@ -91,7 +91,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA37.htm">Procedure</a>, <a href="../EA43.htm">Procurement Terms</a>, <a href="../EA13.htm">Documents</a>, <a href="../EA7.htm">Contract</a>, <a href="../EA35.htm">Planning</a>, <a href="../EA5.htm">Competition</a>, <a href="../EA11.htm">Direct Award Prenotification</a>, <a href="../EA47.htm">Result</a>, <a href="../EA9.htm">Contract Modification</a>, <a href="../EA23.htm">ePO Overview</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA37.htm">Procedure</a>, <a href="../EA43.htm">Procurement Terms</a>, <a href="../EA13.htm">Documents</a>, <a href="../EA7.htm">Contract</a>, <a href="../EA35.htm">Planning</a>, <a href="../EA5.htm">Competition</a>, <a href="../EA11.htm">Direct Award Prenotification</a>, <a href="../EA47.htm">Result</a>, <a href="../EA9.htm">Contract Modification</a>, <a href="../EA23.htm">ePO Overview</a>, <a href="../EA41.htm">Procurement Roles</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">A set of interrelated Business Information representing the business facts.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;Documents may convey information in any language, medium or form, including textual, numerical, graphic, cartographic, audio-visual forms, etc.&lt;br/&gt;&lt;br/&gt;WG Approval 23/05/2019&lt;br/&gt;&lt;br/&gt;</div>
@@ -458,6 +458,54 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
+						<a href="EA283.htm">epo:Role</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:submitsDocument<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:isSubmittedBy<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink470" onclick="parent.toggleDiv('detailsDIVLink470','DetailsImageLink470')" />Details:
+							<div id="detailsDIVLink470" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The transmitter of documents. &lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;An example of transmitters are TeD eSenders, which are usually either the Buyer or a Service Provider acting on behalf of the Buyer, qualified by the Publication Office of the European Union.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA230.htm">epo:Procedure</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:relatesTo<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink471" onclick="parent.toggleDiv('detailsDIVLink471','DetailsImageLink471')" />Details:
+							<div id="detailsDIVLink471" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Associated to. &lt;br/&gt;&lt;br/&gt;Additional information: &lt;br/&gt;&lt;br/&gt;In the case of a Planning form this subproperty notifies is used. &lt;br/&gt;&lt;br/&gt;In the case of Competition form this subproperty announces is used. &lt;br/&gt;&lt;br/&gt;In the case of Result form this subproperty summarises is used. &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
 						<a href="EA175.htm">epo:Document</a><br />
 						Class &nbsp;
 					</td>
@@ -472,31 +520,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink470" onclick="parent.toggleDiv('detailsDIVLink470','DetailsImageLink470')" />Details:
-							<div id="detailsDIVLink470" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA159.htm">epo:Change</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasChanged<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink471" onclick="parent.toggleDiv('detailsDIVLink471','DetailsImageLink471')" />Details:
-							<div id="detailsDIVLink471" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink472" onclick="parent.toggleDiv('detailsDIVLink472','DetailsImageLink472')" />Details:
+							<div id="detailsDIVLink472" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -518,57 +543,9 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink472" onclick="parent.toggleDiv('detailsDIVLink472','DetailsImageLink472')" />Details:
-							<div id="detailsDIVLink472" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA238.htm">epo:PublicationProvision</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasNonPublishedElement<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink473" onclick="parent.toggleDiv('detailsDIVLink473','DetailsImageLink473')" />Details:
 							<div id="detailsDIVLink473" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">For example, elements in the Contract Award Notice that are published at a later date.&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA229.htm">epo:Procedure</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:relatesTo<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink474" onclick="parent.toggleDiv('detailsDIVLink474','DetailsImageLink474')" />Details:
-							<div id="detailsDIVLink474" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">Associated to. &lt;br/&gt;&lt;br/&gt;Additional information: &lt;br/&gt;&lt;br/&gt;In the case of a Planning form this subproperty notifies is used. &lt;br/&gt;&lt;br/&gt;In the case of Competition form this subproperty announces is used. &lt;br/&gt;&lt;br/&gt;In the case of Result form this subproperty summarises is used. &lt;br/&gt;</div>
-
+							&nbsp;
 							</div>
 						</div>
 					</td>
@@ -589,8 +566,55 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink474" onclick="parent.toggleDiv('detailsDIVLink474','DetailsImageLink474')" />Details:
+							<div id="detailsDIVLink474" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA239.htm">epo:PublicationProvision</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:hasNonPublishedElement<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink475" onclick="parent.toggleDiv('detailsDIVLink475','DetailsImageLink475')" />Details:
 							<div id="detailsDIVLink475" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">For example, elements in the Contract Award Notice that are published at a later date.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA159.htm">epo:Change</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:hasChanged<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink476" onclick="parent.toggleDiv('detailsDIVLink476','DetailsImageLink476')" />Details:
+							<div id="detailsDIVLink476" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -622,29 +646,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink476" onclick="parent.toggleDiv('detailsDIVLink476','DetailsImageLink476')" />Details:
-							<div id="detailsDIVLink476" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA224.htm">epo:PlannedProcurementPart</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:refersTo<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink477" onclick="parent.toggleDiv('detailsDIVLink477','DetailsImageLink477')" />Details:
 							<div id="detailsDIVLink477" class="DetailsDiv" >
 							&nbsp;
@@ -654,7 +655,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA163.htm">epo:Contract</a><br />
+						<a href="EA225.htm">epo:PlannedProcurementPart</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -662,7 +663,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:attaches<br />
+						<strong>Name:</strong> epo:refersTo<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -700,7 +701,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA249.htm">epo:SecurityClearanceTerms</a><br />
+						<a href="EA247.htm">epo:SecurityClearanceTerms</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -723,6 +724,29 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
+						<a href="EA163.htm">epo:Contract</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:attaches<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink481" onclick="parent.toggleDiv('detailsDIVLink481','DetailsImageLink481')" />Details:
+							<div id="detailsDIVLink481" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
 						<a href="EA159.htm">epo:Change</a><br />
 						Class &nbsp;
 					</td>
@@ -737,8 +761,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink481" onclick="parent.toggleDiv('detailsDIVLink481','DetailsImageLink481')" />Details:
-							<div id="detailsDIVLink481" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink482" onclick="parent.toggleDiv('detailsDIVLink482','DetailsImageLink482')" />Details:
+							<div id="detailsDIVLink482" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -757,28 +781,28 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA218.htm">«abstract class» epo:Notice</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA109.htm">at-voc:communication-justification</a></td>
+					<td width="10%" class="TableRow" valign="top">Enumeration</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA243.htm">epo:RequestForParticipation</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA233.htm">epo:ProcurementDocument</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA261.htm">epo:TenderDocument</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA244.htm">epo:RequestForParticipation</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA263.htm">epo:TenderDocument</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA234.htm">epo:ProcurementDocument</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
@@ -796,13 +820,15 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableRow" valign="top">Enumeration</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+					<td width="40%" class="TableRow" valign="top">The language translation(s) in which the instances of the given concepts are available. These linguistic versions are not an official translation, they are provided only for information.
+
+WG Approval 03/10/2019</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA109.htm">at-voc:communication-justification</a></td>
-					<td width="10%" class="TableRow" valign="top">Enumeration</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA219.htm">«abstract class» epo:Notice</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
@@ -810,9 +836,7 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableRow" valign="top">Enumeration</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">The language translation(s) in which the instances of the given concepts are available. These linguistic versions are not an official translation, they are provided only for information.
-
-WG Approval 03/10/2019</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 
 			</table>
