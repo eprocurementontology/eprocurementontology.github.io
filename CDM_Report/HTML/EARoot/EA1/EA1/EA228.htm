@@ -115,6 +115,64 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes750')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes750" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes750_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes750_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes750_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes750_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes750_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes750_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes750_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes750_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A narrative text explaining the content of an instance of the class / Self-explanatory text about a concept&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public Concept</i><br /><strong>&nbsp;&nbsp;epo:DescriptionCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
 					<a href="#" onclick="parent.toggleData('DetailsImageAttributes751')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes751" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
@@ -159,7 +217,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A narrative text explaining the content of an instance of the class / Self-explanatory text about a concept&lt;br/&gt;
+			A code to inform about a lapse of time that cannot be expressed by means of a start data and end date or duration measure. &lt;br/&gt;&lt;br/&gt;Additional information&lt;br/&gt;For example, unlimited, unknown, etc.&lt;br/&gt;&lt;br/&gt;WG Approval 1/08/2019&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -168,7 +226,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Concept</i><br /><strong>&nbsp;&nbsp;epo:DescriptionCode</strong>
+					<i>Public Measure</i><br /><strong>&nbsp;&nbsp;epo:DurationMeasure</strong>
 				</td>
 			</tr>
 			<tr>
@@ -217,7 +275,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A code to inform about a lapse of time that cannot be expressed by means of a start data and end date or duration measure. &lt;br/&gt;&lt;br/&gt;Additional information&lt;br/&gt;For example, unlimited, unknown, etc.&lt;br/&gt;&lt;br/&gt;WG Approval 1/08/2019&lt;br/&gt;
+			The duration of this period, expressed as an ISO 8601 code. See also the ccts:Measure data type in the ePO package &quot;ccts&quot;.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -226,7 +284,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Measure</i><br /><strong>&nbsp;&nbsp;epo:DurationMeasure</strong>
+					<i>Public Date</i><br /><strong>&nbsp;&nbsp;epo:EndDate</strong>
 				</td>
 			</tr>
 			<tr>
@@ -275,7 +333,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The duration of this period, expressed as an ISO 8601 code. See also the ccts:Measure data type in the ePO package &quot;ccts&quot;.&lt;br/&gt;&lt;br/&gt;
+			The date on which this period ends.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -284,7 +342,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Date</i><br /><strong>&nbsp;&nbsp;epo:EndDate</strong>
+					<i>Public Time</i><br /><strong>&nbsp;&nbsp;epo:EndTime</strong>
 				</td>
 			</tr>
 			<tr>
@@ -333,7 +391,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The date on which this period ends.&lt;br/&gt;
+			The time at which this period ends.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -342,7 +400,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Time</i><br /><strong>&nbsp;&nbsp;epo:EndTime</strong>
+					<i>Public Date</i><br /><strong>&nbsp;&nbsp;epo:StartDate</strong>
 				</td>
 			</tr>
 			<tr>
@@ -391,7 +449,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The time at which this period ends.&lt;br/&gt;
+			The date on which this period begins.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -400,7 +458,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Time</i><br /><strong>&nbsp;&nbsp;epo:StartDate</strong>
+					<i>Public Time</i><br /><strong>&nbsp;&nbsp;epo:StartTime</strong>
 				</td>
 			</tr>
 			<tr>
@@ -449,64 +507,6 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The date on which this period begins.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public xsd:Time</i><br /><strong>&nbsp;&nbsp;epo:StartTime</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes757')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes757" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes757_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes757_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes757_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes757_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes757_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes757_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes757_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes757_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
 			The time at which this period begins.&lt;br/&gt;
 		</td>
 	</tr>
@@ -540,8 +540,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink758" onclick="parent.toggleDiv('detailsDIVLink758','DetailsImageLink758')" />Details:
-							<div id="detailsDIVLink758" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink757" onclick="parent.toggleDiv('detailsDIVLink757','DetailsImageLink757')" />Details:
+							<div id="detailsDIVLink757" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -563,8 +563,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink759" onclick="parent.toggleDiv('detailsDIVLink759','DetailsImageLink759')" />Details:
-							<div id="detailsDIVLink759" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink758" onclick="parent.toggleDiv('detailsDIVLink758','DetailsImageLink758')" />Details:
+							<div id="detailsDIVLink758" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">The estimated date when the contract is to be started.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;When the Lot uses a Technique the contract estimated duration applies to the Technique.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
@@ -587,8 +587,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink760" onclick="parent.toggleDiv('detailsDIVLink760','DetailsImageLink760')" />Details:
-							<div id="detailsDIVLink760" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink759" onclick="parent.toggleDiv('detailsDIVLink759','DetailsImageLink759')" />Details:
+							<div id="detailsDIVLink759" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -610,8 +610,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink761" onclick="parent.toggleDiv('detailsDIVLink761','DetailsImageLink761')" />Details:
-							<div id="detailsDIVLink761" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink760" onclick="parent.toggleDiv('detailsDIVLink760','DetailsImageLink760')" />Details:
+							<div id="detailsDIVLink760" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -633,8 +633,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink762" onclick="parent.toggleDiv('detailsDIVLink762','DetailsImageLink762')" />Details:
-							<div id="detailsDIVLink762" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink761" onclick="parent.toggleDiv('detailsDIVLink761','DetailsImageLink761')" />Details:
+							<div id="detailsDIVLink761" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -656,8 +656,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink763" onclick="parent.toggleDiv('detailsDIVLink763','DetailsImageLink763')" />Details:
-							<div id="detailsDIVLink763" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink762" onclick="parent.toggleDiv('detailsDIVLink762','DetailsImageLink762')" />Details:
+							<div id="detailsDIVLink762" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -679,8 +679,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink764" onclick="parent.toggleDiv('detailsDIVLink764','DetailsImageLink764')" />Details:
-							<div id="detailsDIVLink764" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink763" onclick="parent.toggleDiv('detailsDIVLink763','DetailsImageLink763')" />Details:
+							<div id="detailsDIVLink763" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -702,8 +702,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink765" onclick="parent.toggleDiv('detailsDIVLink765','DetailsImageLink765')" />Details:
-							<div id="detailsDIVLink765" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink764" onclick="parent.toggleDiv('detailsDIVLink764','DetailsImageLink764')" />Details:
+							<div id="detailsDIVLink764" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">Deadline for CA to finalise the assessment of request to participate in a DPS.&lt;br/&gt;&lt;br/&gt;Pending of approval&lt;br/&gt;&lt;br/&gt;See Art. 34.5. first subparagraph&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
@@ -726,8 +726,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink766" onclick="parent.toggleDiv('detailsDIVLink766','DetailsImageLink766')" />Details:
-							<div id="detailsDIVLink766" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink765" onclick="parent.toggleDiv('detailsDIVLink765','DetailsImageLink765')" />Details:
+							<div id="detailsDIVLink765" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -749,8 +749,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink767" onclick="parent.toggleDiv('detailsDIVLink767','DetailsImageLink767')" />Details:
-							<div id="detailsDIVLink767" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink766" onclick="parent.toggleDiv('detailsDIVLink766','DetailsImageLink766')" />Details:
+							<div id="detailsDIVLink766" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
