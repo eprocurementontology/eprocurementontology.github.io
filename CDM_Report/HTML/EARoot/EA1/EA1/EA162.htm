@@ -101,6 +101,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -110,7 +111,65 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
+					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:AdditionalInformation</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes356')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes356" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes356_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes356_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes356_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes356_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes356_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes356_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes356_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes356_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Supplementary data about the instance of the concept.&lt;br/&gt;&lt;br/&gt;WG Approval 30/09/2019&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public Description</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
 				</td>
 			</tr>
 			<tr>
@@ -159,7 +218,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A unique identifier of the instance of the concept.&lt;br/&gt;
+			A narrative text explaining the content of an instance of the class / Self-explanatory text about a concept.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -168,7 +227,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public URI</i><br /><strong>&nbsp;&nbsp;epo:URL</strong>
+					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:Endpoint</strong>
 				</td>
 			</tr>
 			<tr>
@@ -217,7 +276,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The identifier of a resource.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;For example:&lt;br/&gt;&lt;br/&gt;1. The URL of the system from where to access the procurement documents;&lt;br/&gt;2. The URL of the system for the submission of tender documents;&lt;br/&gt;3. The URL of the system from where to download a tool to communicate with the Buyer;&lt;br/&gt;4. The URL of the system used by a Technique to allow Economic Operators to exchange information with the Buyer (e.g. eAuction and DPS Systems)&lt;br/&gt;5. The URL of the system used to exchange information between Buyer and EO for questions and clarifications;&lt;br/&gt;&lt;br/&gt;WG Approval 30/09/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			The value identifying a communication network node, required to gain access to a service.&lt;br/&gt;&lt;br/&gt;Additional information&lt;br/&gt;&lt;br/&gt;Examples:&lt;br/&gt;https://data.gov.es/sdg?serviceId=diploma-request&lt;br/&gt;mailto:myname@mycompany.com&lt;br/&gt;+33 6090 92 81 80 Ext. 3213&lt;br/&gt;&lt;br/&gt;WG Approval 07/05/2020&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -226,7 +285,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:AdditionalInformation</strong>
+					<i>Public Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -275,7 +334,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Supplementary data about the instance of the concept.&lt;br/&gt;&lt;br/&gt;WG Approval 30/09/2019&lt;br/&gt;&lt;br/&gt;
+			A unique identifier of the instance of the concept.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -284,7 +343,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Description</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
+					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:Name</strong>
 				</td>
 			</tr>
 			<tr>
@@ -333,7 +392,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A narrative text explaining the content of an instance of the class / Self-explanatory text about a concept.&lt;br/&gt;
+			A short text representing an instance of the class.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -342,7 +401,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:Endpoint</strong>
+					<i>Public URI</i><br /><strong>&nbsp;&nbsp;epo:URL</strong>
 				</td>
 			</tr>
 			<tr>
@@ -391,65 +450,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The value identifying a communication network node, required to gain access to a service.&lt;br/&gt;&lt;br/&gt;Additional information&lt;br/&gt;&lt;br/&gt;Examples:&lt;br/&gt;https://data.gov.es/sdg?serviceId=diploma-request&lt;br/&gt;mailto:myname@mycompany.com&lt;br/&gt;+33 6090 92 81 80 Ext. 3213&lt;br/&gt;&lt;br/&gt;WG Approval 07/05/2020&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:Name</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes362')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes362" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes362_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes362_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes362_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes362_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes362_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes362_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes362_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes362_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			A short text representing an instance of the class.&lt;br/&gt;
+			The identifier of a resource.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;For example:&lt;br/&gt;&lt;br/&gt;1. The URL of the system from where to access the procurement documents;&lt;br/&gt;2. The URL of the system for the submission of tender documents;&lt;br/&gt;3. The URL of the system from where to download a tool to communicate with the Buyer;&lt;br/&gt;4. The URL of the system used by a Technique to allow Economic Operators to exchange information with the Buyer (e.g. eAuction and DPS Systems)&lt;br/&gt;5. The URL of the system used to exchange information between Buyer and EO for questions and clarifications;&lt;br/&gt;&lt;br/&gt;WG Approval 30/09/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -468,7 +469,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA281.htm">epo:Agent</a><br />
+						<a href="EA278.htm">epo:Agent</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -482,8 +483,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink363" onclick="parent.toggleDiv('detailsDIVLink363','DetailsImageLink363')" />Details:
-							<div id="detailsDIVLink363" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink362" onclick="parent.toggleDiv('detailsDIVLink362','DetailsImageLink362')" />Details:
+							<div id="detailsDIVLink362" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">The Agent that is legally responsible for the given use of the Channel.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;This ownership does not refer to the agent that manages the channel (that could be a service provider, too) but to the one that is legally responsible or accountable for the service being provided through it. For example the buyer that is offering a channel to Economic Operators for one specific purpose, like the provision of information. &lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
@@ -492,7 +493,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA287.htm">epo:OpeningHoursSpecification</a><br />
+						<a href="EA284.htm">epo:OpeningHoursSpecification</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -506,8 +507,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink364" onclick="parent.toggleDiv('detailsDIVLink364','DetailsImageLink364')" />Details:
-							<div id="detailsDIVLink364" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink363" onclick="parent.toggleDiv('detailsDIVLink363','DetailsImageLink363')" />Details:
+							<div id="detailsDIVLink363" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -525,7 +526,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA180.htm">epo:DocumentCollection</a><br />
+						<a href="EA226.htm">epo:OpeningTerm</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -533,14 +534,14 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasRestrictedAccess<br />
+						<strong>Name:</strong> epo:hasVirtualTenderOpeningAddress<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink365" onclick="parent.toggleDiv('detailsDIVLink365','DetailsImageLink365')" />Details:
-							<div id="detailsDIVLink365" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink364" onclick="parent.toggleDiv('detailsDIVLink364','DetailsImageLink364')" />Details:
+							<div id="detailsDIVLink364" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -548,7 +549,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA179.htm">epo:Document</a><br />
+						<a href="EA261.htm">epo:SubmissionTerm</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -556,7 +557,31 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasFreeAccess<br />
+						<strong>Name:</strong> epo:hasGeneralEmploymentCommunicationMeans<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink365" onclick="parent.toggleDiv('detailsDIVLink365','DetailsImageLink365')" />Details:
+							<div id="detailsDIVLink365" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The electronic means used to obtain the information concerning the general regulatory framework for environmental protection applicable in the place where the contract is to be performed.&lt;br/&gt;&lt;br/&gt;WG Approval 21/03/2019 16:11:58&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA235.htm">epo:ProcedureTerm</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:hasRestrictedProcurementDocumentsMadeAvailableVia <br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -571,7 +596,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA229.htm">epo:OpeningTerm</a><br />
+						<a href="EA235.htm">epo:ProcedureTerm</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -579,7 +604,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasVirtualTenderOpeningAddress<br />
+						<strong>Name:</strong> epo:hasQuestionsMadeAvailableVia <br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -594,7 +619,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA238.htm">epo:ProcedureTerm</a><br />
+						<a href="EA218.htm">epo:Lot</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -602,7 +627,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasRestrictedProcurementDocumentsMadeAvailableVia <br />
+						<strong>Name:</strong> epo:usesAdhoc<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -617,7 +642,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA264.htm">epo:SubmissionTerm</a><br />
+						<a href="EA235.htm">epo:ProcedureTerm</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -625,7 +650,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasGeneralEmploymentCommunicationMeans<br />
+						<strong>Name:</strong> epo:hasClarificationsAvailableVia<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -633,15 +658,14 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink369" onclick="parent.toggleDiv('detailsDIVLink369','DetailsImageLink369')" />Details:
 							<div id="detailsDIVLink369" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The electronic means used to obtain the information concerning the general regulatory framework for environmental protection applicable in the place where the contract is to be performed.&lt;br/&gt;&lt;br/&gt;WG Approval 21/03/2019 16:11:58&lt;br/&gt;</div>
-
+							&nbsp;
 							</div>
 						</div>
 					</td>
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA232.htm">epo:PlannedProcurementPart</a><br />
+						<a href="EA264.htm">«abstract class» epo:Technique</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -649,7 +673,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:uses<br />
+						<strong>Name:</strong> epo:isAvailableVia<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -664,7 +688,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA238.htm">epo:ProcedureTerm</a><br />
+						<a href="EA247.htm">epo:QualificationSystem</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -672,7 +696,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasQuestionsMadeAvailableVia <br />
+						<strong>Name:</strong> epo:hasMeansOfCommunication<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -687,7 +711,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA264.htm">epo:SubmissionTerm</a><br />
+						<a href="EA261.htm">epo:SubmissionTerm</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -710,7 +734,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA264.htm">epo:SubmissionTerm</a><br />
+						<a href="EA180.htm">epo:DocumentCollection</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -718,7 +742,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasGeneralTaxCommunicationMeans<br />
+						<strong>Name:</strong> epo:hasRestrictedAccess<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -726,15 +750,14 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink373" onclick="parent.toggleDiv('detailsDIVLink373','DetailsImageLink373')" />Details:
 							<div id="detailsDIVLink373" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The electronic means used to obtain the information concerning the general regulatory framework for taxes applicable in the place where the contract is to be performed.&lt;br/&gt;&lt;br/&gt;WG Approval 21/03/2019 16:11:30&lt;br/&gt;</div>
-
+							&nbsp;
 							</div>
 						</div>
 					</td>
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA221.htm">epo:Lot</a><br />
+						<a href="EA235.htm">epo:ProcedureTerm</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -742,7 +765,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:usesAdhoc<br />
+						<strong>Name:</strong> epo:hasProcurementDocumentsMadeAvailableVia<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -757,7 +780,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA267.htm">«abstract class» epo:Technique</a><br />
+						<a href="EA180.htm">epo:DocumentCollection</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -765,7 +788,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isAvailableVia<br />
+						<strong>Name:</strong> epo:hasFreeAccessVia<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -773,29 +796,6 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink375" onclick="parent.toggleDiv('detailsDIVLink375','DetailsImageLink375')" />Details:
 							<div id="detailsDIVLink375" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA250.htm">epo:QualificationSystem</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasMeansOfCommunication<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink376" onclick="parent.toggleDiv('detailsDIVLink376','DetailsImageLink376')" />Details:
-							<div id="detailsDIVLink376" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -811,14 +811,14 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasRestrictedAccess<br />
+						<strong>Name:</strong> epo:hasFreeAccess<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink377" onclick="parent.toggleDiv('detailsDIVLink377','DetailsImageLink377')" />Details:
-							<div id="detailsDIVLink377" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink376" onclick="parent.toggleDiv('detailsDIVLink376','DetailsImageLink376')" />Details:
+							<div id="detailsDIVLink376" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -826,7 +826,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA238.htm">epo:ProcedureTerm</a><br />
+						<a href="EA261.htm">epo:SubmissionTerm</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -834,7 +834,31 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasClarificationsAvailableVia<br />
+						<strong>Name:</strong> epo:hasGeneralTaxCommunicationMeans<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink377" onclick="parent.toggleDiv('detailsDIVLink377','DetailsImageLink377')" />Details:
+							<div id="detailsDIVLink377" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The electronic means used to obtain the information concerning the general regulatory framework for taxes applicable in the place where the contract is to be performed.&lt;br/&gt;&lt;br/&gt;WG Approval 21/03/2019 16:11:30&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA229.htm">epo:PlannedProcurementPart</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:uses<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -849,7 +873,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA264.htm">epo:SubmissionTerm</a><br />
+						<a href="EA261.htm">epo:SubmissionTerm</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -873,7 +897,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA180.htm">epo:DocumentCollection</a><br />
+						<a href="EA179.htm">epo:Document</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -881,7 +905,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasFreeAccessVia<br />
+						<strong>Name:</strong> epo:hasRestrictedAccess<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -917,33 +941,23 @@ function nameClassifier(name, separator)
 						</div>
 					</td>
 				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA238.htm">epo:ProcedureTerm</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:hasProcurementDocumentsMadeAvailableVia<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink382" onclick="parent.toggleDiv('detailsDIVLink382','DetailsImageLink382')" />Details:
-							<div id="detailsDIVLink382" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
 
 			</table>
 		</div>
-		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
