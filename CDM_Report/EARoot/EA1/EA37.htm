@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Procedure</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA38.png" usemap="#EA38" border="0" />
+
+<MAP NAME="EA38">
+<area shape="rect" coords="83,1443,173,1503" href="./EA1/EA141.htm" target="_self">
+<area shape="rect" coords="1483,2160,1573,2220" href="./EA1/EA224.htm" target="_self">
+<area shape="rect" coords="1740,2069,1876,2830" href="./EA1/EA120.htm" target="_self">
+<area shape="rect" coords="1814,1888,1969,1973" href="./EA1/EA198.htm" target="_self">
+<area shape="rect" coords="123,1189,279,1261" href="./EA1/EA142.htm" target="_self">
+<area shape="rect" coords="83,1343,213,1428" href="./EA1/EA139.htm" target="_self">
+<area shape="rect" coords="841,854,931,914" href="./EA1/EA121.htm" target="_self">
+<area shape="rect" coords="232,1544,322,1642" href="./EA1/EA171.htm" target="_self">
+<area shape="rect" coords="617,2096,858,2223" href="./EA1/EA245.htm" target="_self">
+<area shape="rect" coords="718,996,1054,1120" href="./EA1/EA251.htm" target="_self">
+<area shape="rect" coords="905,1862,1179,1973" href="./EA1/EA118.htm" target="_self">
+<area shape="rect" coords="377,1700,649,1788" href="./EA1/EA154.htm" target="_self">
+<area shape="rect" coords="1067,1446,1167,1516" href="./EA1/EA127.htm" target="_self">
+<area shape="rect" coords="1390,1005,1573,1076" href="./EA1/EA196.htm" target="_self">
+<area shape="rect" coords="1105,572,1333,644" href="./EA1/EA153.htm" target="_self">
+<area shape="rect" coords="649,1515,862,1642" href="./EA1/EA170.htm" target="_self">
+<area shape="rect" coords="1125,682,1327,1040" href="./EA1/EA128.htm" target="_self">
+<area shape="rect" coords="980,1614,1222,1738" href="./EA1/EA189.htm" target="_self">
+<area shape="rect" coords="1195,1762,1435,1863" href="./EA1/EA278.htm" target="_self">
+<area shape="rect" coords="1436,1698,1618,1738" href="./EA1/EA280.htm" target="_self">
+<area shape="rect" coords="852,10,967,94" href="EA64.htm" target="_self">
+<area shape="rect" coords="523,34,623,70" href="EA43.htm" target="_self">
+<area shape="rect" coords="1094,212,1348,284" href="./EA1/EA249.htm" target="_self">
+<area shape="rect" coords="1385,1132,1611,1220" href="./EA1/EA167.htm" target="_self">
+<area shape="rect" coords="1437,1880,1619,1981" href="./EA1/EA195.htm" target="_self">
+<area shape="rect" coords="730,1313,1042,1483" href="./EA1/EA227.htm" target="_self">
+<area shape="rect" coords="1085,332,1339,554" href="./EA1/EA140.htm" target="_self">
+<area shape="rect" coords="465,222,740,479" href="./EA1/EA244.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Procedure : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">02/02/2018 00:00:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">18/06/2020 10:53:09</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">mfontsan</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{D9CA9F8E-ECE3-4dc4-8C69-725C641469AE}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;ol&gt;<br />&lt;li&gt;Procurement Procedures is a series of activities leading to the conclusion of a public contract.&lt;/li&gt;&lt;li&gt;Pay attention to the fact that the Procuring Procedure is not directly linked to the Contract. Instead, this connection is made through the Procuring Entities involved in the Procedure. There are different reasons for this: e.g. if no Tenders are submitted for a Procedure, no Contract is issued, which also entails that the link could not be established through the Tender. This also explains why Economic Operator is not directly related to the Procurement Procedure.&lt;/li&gt;&lt;li&gt;Different types of Procurement Procedures are carried out according to the EU Legislation (see Procurement Procedure Type).&lt;/li&gt;&lt;li&gt;Some Procurement Procedures apply specific legal regimes and instruments for the awarding of certain services or the acquisition of designs (see Procurement Regime Type).&lt;/li&gt;&lt;li&gt;Procurement Procedures are divided in one or more Lots (see diagram Lots).&lt;/li&gt;&lt;li&gt;Procurement Procedures usually generate, collect or refer to different documents. Two of the most relevant groups of documents are represented by the classes Procurement Document and Tender Document (see diagram Documents).&lt;/li&gt;&lt;li&gt;All Procurement Procedures are conducted by at least one Procuring Entity, in some cases Procuring Entities carry out join procurement (see diagram Procuring Entity).&lt;/li&gt;&lt;li&gt;Procurement Procedures may need to refer to certain types of organisations responsible for the management or control of a number of aspects of the procedure, e.g. environmental party, tax party.&lt;/li&gt;&lt;li&gt;In some types of Procurement Procedures (e.g. restricted, competitive with negotiation, other), Procuring Entities may limit the number of candidates accessing the award criteria phase. When this is the case, certain information must be notified by the Procuring Entity, e.g. expected maximum and minimum number of candidates, justification / description of the limitation, etc. (Tender Short List).&lt;/li&gt;&lt;/ol&gt;<br />&lt;br/&gt;&lt;img src="../../images/Legend.png.png" /&gt; &lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>
