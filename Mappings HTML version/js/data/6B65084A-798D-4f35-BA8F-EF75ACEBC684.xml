@@ -27,4 +27,4 @@ tocTab[tocTab.length] = new Array("0.1:26", "", "Techniques and Instruments", "E
 tocTab[tocTab.length] = new Array("0.1:27", "", "Tender", "EARoot/EA1/EA53.htm", "175.png", "29", "0", "", "Logical diagram0","{27826D9A-74BD-498e-BC18-3999BBD9203C}");
 tocTab[tocTab.length] = new Array("0.1:28", "", "Values", "EARoot/EA1/EA55.htm", "175.png", "61", "0", "", "Logical diagram0","{DED1A72C-31A8-4eb0-9EAC-368EEAA51C95}");
 tocTab[tocTab.length] = new Array("0.1.1", "1", "epo", "EARoot/EA1/EA1/EA97.htm", "4.png", "", "", "{DF19ED10-DFE1-4304-B67F-605B4FF70A4F}", "Package");
-tocTab[tocTab.length] = new Array("0.1.2", "1", "reg2015", "EARoot/EA1/EA2/EA306.htm", "4.png", "", "", "{716994A4-374E-4579-BDE0-4B1F7C968AEC}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2", "1", "reg2015", "EARoot/EA1/EA2/EA304.htm", "4.png", "", "", "{716994A4-374E-4579-BDE0-4B1F7C968AEC}", "Package");
