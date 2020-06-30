@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>epo::epo:Evidence</title>
+<title>epo::epo:EvaluationTerm</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("epo:Evidence", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("epo:EvaluationTerm", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">07/02/2018 12:51:44</td>
+			<td width="85%" class="ObjectDetailsValue">10/05/2018 9:35:29</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">26/05/2020 15:56:08</td>
+			<td class="ObjectDetailsValue">10/06/2020 12:19:34</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,20 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{438A4790-CE7D-4b5e-BD4B-99567C80AC7D}</td>
+			<td class="ObjectDetailsValue">{0C735489-15DC-40a7-A94E-A9202738B188}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA2/EA1/EA311.htm">Criterion</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA31.htm">Lots</a>, <a href="../EA43.htm">Procurement Term</a>, <a href="../EA23.htm">ePO Overview</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Something which proves that something else exists or is true, in particular an evidence is used to prove that a specific criterion is met by someone of by something.&lt;br/&gt;&lt;br/&gt;To be checked&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Conditions and stipulations defining particularities of the tender evaluation.&lt;br/&gt;&lt;br/&gt;(WG approval 23/11/2018)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -109,7 +109,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Identifier</i><br /><strong>&nbsp;&nbsp;epo:Identifier</strong>
+					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:AwardCriteriaEvaluationFormula</strong>
 				</td>
 			</tr>
 			<tr>
@@ -152,12 +152,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Based on the Award Dimension Type code list&lt;br/&gt;&lt;br/&gt;Let&#39;s say we have 5 different quality award criteria&lt;br/&gt;&lt;br/&gt;QUALITY&lt;br/&gt;&lt;br/&gt;1st - e.g. please describe how you&#39;ll make this machine (WEIGHT 20%)&lt;br/&gt;2nd - describe the workflow used to manufacture the machine (WEIGHT 25%)&lt;br/&gt;3rd - describe the materials used for each component of the machine (WEIGHT 10%)&lt;br/&gt;4th - describe the quality control measures (WEIGHT 5%)&lt;br/&gt;5th - describe how the manufacturing dead-lines (WEIGHT 40%)&lt;br/&gt;&lt;br/&gt;PRICE CRITERIA&lt;br/&gt;(list of criteria related to price)&lt;br/&gt;&lt;br/&gt;COST CRITERIA&lt;br/&gt;(list of criteria related to cost)&lt;br/&gt;&lt;br/&gt;Overall award criteria Weight 20% Price, 60% Quality, 20% Cost&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:Name</strong>
+					<i>Public Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallQualityAwardCriteriaPonderation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -200,22 +210,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			A short text representing an instance of the class.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
+					<i>Public Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallPriceAwardCriteriaPonderation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -258,22 +258,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Self-explanatory text about a concept.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:ConfidentialityLevelType</strong>
+					<i>Public Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallCostAwardCriteriaPonderation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -322,7 +312,7 @@ function nameClassifier(name, separator)
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="AssociationsFromTable">
+		<div class="ItemBody" id="AssociationsToTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="40%" class="TableHeading">Element</td>
@@ -331,7 +321,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA179.htm">epo:Criterion</a><br />
+						<a href="EA181.htm">epo:Criterion</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -339,7 +329,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:providesEvidence<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -352,17 +342,27 @@ function nameClassifier(name, separator)
 						</div>
 					</td>
 				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA179.htm">epo:Criterion</a><br />
+						<a href="EA225.htm">epo:Lot</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:proofs<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:basesOnEvidence<br />
+						<strong>Name:</strong> epo:hasTenderEvaluationTerm<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -374,25 +374,6 @@ function nameClassifier(name, separator)
 							</div>
 						</div>
 					</td>
-				</tr>
-
-			</table>
-		</div>
-		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA284.htm">espd:confidentiality-level</a></td>
-					<td width="10%" class="TableRow" valign="top">Enumeration</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 
 			</table>
