@@ -100,7 +100,6 @@ function nameClassifier(name, separator)
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -110,55 +109,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:AdditionalClassification</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes933')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes933" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes933_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes933_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes933_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes933_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes933_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes933_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes933_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes933_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:AdditionalContractNature</strong>
+					<i>Public Quantity</i><br /><strong>&nbsp;&nbsp;epo:TotalMagnitudeQuantity</strong>
 				</td>
 			</tr>
 			<tr>
@@ -207,7 +158,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Additional type of acquisition taken into consideration in the contract.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;
+			The number of units required.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;The quantity needs to go along with the unit. In the ePO we use the ISO 15000-5 UN/CEFACT CCTS QuantityType for quantities, which uses the attribute &quot;unitCode&quot; to specify what the quantity is about.&lt;br/&gt;For example, 3 months; 131 printers; 1,000 tones; etc.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -322,7 +273,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:OptionsDescription</strong>
+					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:AdditionalClassification</strong>
 				</td>
 			</tr>
 			<tr>
@@ -365,22 +316,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The motivation and details about additional purchases that the buyer may undertake while the contract is valid.&lt;br/&gt;&lt;br/&gt;WG Approval 09/04/2019 &lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:OptionsPermisisions</strong>
+					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:OptionsDescription</strong>
 				</td>
 			</tr>
 			<tr>
@@ -423,12 +364,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The motivation and details about additional purchases that the buyer may undertake while the contract is valid.&lt;br/&gt;&lt;br/&gt;WG Approval 09/04/2019 &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Quantity</i><br /><strong>&nbsp;&nbsp;epo:TotalMagnitudeQuantity</strong>
+					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:Unit</strong>
 				</td>
 			</tr>
 			<tr>
@@ -471,22 +422,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The number of units required.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;The quantity needs to go along with the unit. In the ePO we use the ISO 15000-5 UN/CEFACT CCTS QuantityType for quantities, which uses the attribute &quot;unitCode&quot; to specify what the quantity is about.&lt;br/&gt;For example, 3 months; 131 printers; 1,000 tones; etc.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:Unit</strong>
+					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:OptionsPermisisions</strong>
 				</td>
 			</tr>
 			<tr>
@@ -532,6 +473,64 @@ function nameClassifier(name, separator)
 						&nbsp;
 						
 				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:AdditionalContractNature</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes941')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes941" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes941_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes941_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes941_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes941_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes941_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes941_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes941_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes941_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Additional type of acquisition taken into consideration in the contract.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
 			</tr>
 	</table>
 </div>
@@ -558,8 +557,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink941" onclick="parent.toggleDiv('detailsDIVLink941','DetailsImageLink941')" />Details:
-							<div id="detailsDIVLink941" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink942" onclick="parent.toggleDiv('detailsDIVLink942','DetailsImageLink942')" />Details:
+							<div id="detailsDIVLink942" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -581,8 +580,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink942" onclick="parent.toggleDiv('detailsDIVLink942','DetailsImageLink942')" />Details:
-							<div id="detailsDIVLink942" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink943" onclick="parent.toggleDiv('detailsDIVLink943','DetailsImageLink943')" />Details:
+							<div id="detailsDIVLink943" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -604,8 +603,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink943" onclick="parent.toggleDiv('detailsDIVLink943','DetailsImageLink943')" />Details:
-							<div id="detailsDIVLink943" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink944" onclick="parent.toggleDiv('detailsDIVLink944','DetailsImageLink944')" />Details:
+							<div id="detailsDIVLink944" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -627,8 +626,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink944" onclick="parent.toggleDiv('detailsDIVLink944','DetailsImageLink944')" />Details:
-							<div id="detailsDIVLink944" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink945" onclick="parent.toggleDiv('detailsDIVLink945','DetailsImageLink945')" />Details:
+							<div id="detailsDIVLink945" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -637,20 +636,7 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Property</td>
-					<td width="70%" class="TableHeading">Value</td>
-				</tr>
-			<tr>
-				<td width="30%" class="TableRow">isFinalSpecialization:</td>
-				<td width="70%" class="TableRow">0</td>
-			</tr>
-
-
-			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

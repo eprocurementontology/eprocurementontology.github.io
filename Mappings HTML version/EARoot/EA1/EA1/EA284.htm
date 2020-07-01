@@ -101,7 +101,6 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -111,113 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:ActivityDescription</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1150')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1150" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes1150_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1150_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1150_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1150_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1150_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1150_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes1150_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes1150_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			In the ePO ontology a taxonomy with all activities, based on different classifications (COFOG, UTILITIES, NACE), will be provided. In ePO this field is to be used exclusively to complement the definition attached to the MainActivityCode.&lt;br/&gt;&lt;br/&gt;However, in eForms there is the code &quot;other&quot; to cover undefined activities. For mapping to this eForms feature one could also use this property.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:BuyerLegalType</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1151')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1151" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes1151_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1151_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1151_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1151_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1151_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes1151_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes1151_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes1151_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:BuyerLegalTypeDescription</strong>
+					<i>Public Indicator</i><br /><strong>&nbsp;&nbsp;epo:ContractingEntity</strong>
 				</td>
 			</tr>
 			<tr>
@@ -260,12 +153,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Role of entities, which:&lt;br/&gt;&lt;br/&gt;(a) are contracting authorities or public undertakings and which pursue one of the activities referred to in Articles 8 to 14 of the Directive 2014/25/EU.&lt;br/&gt;&lt;br/&gt;(b) when they are not contracting authorities or public undertakings, have as one of their activities any of the activities referred to in Articles 8 to 14, or any combination thereof and operate on the basis of special or exclusive rights granted by a competent authority of a Member State.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;The indicator is needed in order to discriminate between those contracts where the Contracting Entity acts as a Contracting Authority undergoing the limits and the rules of Directive 24 and those where it acts as a&#160;&#160;Contracting Entity, with certain relaxed constraints.&lt;br/&gt;For example, the Contracting Entities have different thresholds for the application of Directive 24 if compared with Contracting Authorities.&lt;br/&gt;&lt;br/&gt;WG Approval 28/04/2020&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Indicator</i><br /><strong>&nbsp;&nbsp;epo:ContractingEntity</strong>
+					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:BuyerLegalType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -308,17 +211,7 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Role of entities, which:&lt;br/&gt;&lt;br/&gt;(a) are contracting authorities or public undertakings and which pursue one of the activities referred to in Articles 8 to 14 of the Directive 2014/25/EU.&lt;br/&gt;&lt;br/&gt;(b) when they are not contracting authorities or public undertakings, have as one of their activities any of the activities referred to in Articles 8 to 14, or any combination thereof and operate on the basis of special or exclusive rights granted by a competent authority of a Member State.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;The indicator is needed in order to discriminate between those contracts where the Contracting Entity acts as a Contracting Authority undergoing the limits and the rules of Directive 24 and those where it acts as a&#160;&#160;Contracting Entity, with certain relaxed constraints.&lt;br/&gt;For example, the Contracting Entities have different thresholds for the application of Directive 24 if compared with Contracting Authorities.&lt;br/&gt;&lt;br/&gt;WG Approval 28/04/2020&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
@@ -379,6 +272,112 @@ function nameClassifier(name, separator)
 
 						
 				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:ActivityDescription</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1155')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1155" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1155_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1155_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1155_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1155_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1155_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1155_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1155_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1155_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			In the ePO ontology a taxonomy with all activities, based on different classifications (COFOG, UTILITIES, NACE), will be provided. In ePO this field is to be used exclusively to complement the definition attached to the MainActivityCode.&lt;br/&gt;&lt;br/&gt;However, in eForms there is the code &quot;other&quot; to cover undefined activities. For mapping to this eForms feature one could also use this property.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:BuyerLegalTypeDescription</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1156')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1156" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1156_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1156_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1156_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1156_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1156_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1156_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1156_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1156_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
 			</tr>
 	</table>
 </div>
@@ -405,8 +404,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1155" onclick="parent.toggleDiv('detailsDIVLink1155','DetailsImageLink1155')" />Details:
-							<div id="detailsDIVLink1155" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1157" onclick="parent.toggleDiv('detailsDIVLink1157','DetailsImageLink1157')" />Details:
+							<div id="detailsDIVLink1157" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -428,8 +427,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1156" onclick="parent.toggleDiv('detailsDIVLink1156','DetailsImageLink1156')" />Details:
-							<div id="detailsDIVLink1156" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1158" onclick="parent.toggleDiv('detailsDIVLink1158','DetailsImageLink1158')" />Details:
+							<div id="detailsDIVLink1158" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -451,52 +450,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1157" onclick="parent.toggleDiv('detailsDIVLink1157','DetailsImageLink1157')" />Details:
-							<div id="detailsDIVLink1157" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA220.htm">epo:Lot</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:processesTenders<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1158" onclick="parent.toggleDiv('detailsDIVLink1158','DetailsImageLink1158')" />Details:
-							<div id="detailsDIVLink1158" class="DetailsDiv" >
-							&nbsp;
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA220.htm">epo:Lot</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> &nbsp;<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:receivesRequestsToParticipate<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1159" onclick="parent.toggleDiv('detailsDIVLink1159','DetailsImageLink1159')" />Details:
 							<div id="detailsDIVLink1159" class="DetailsDiv" >
 							&nbsp;
@@ -514,7 +467,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:processesRequestsToParticipate<br />
+						<strong>Name:</strong> epo:processesTenders<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -537,7 +490,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:receivesTenders<br />
+						<strong>Name:</strong> epo:receivesRequestsToParticipate<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -560,7 +513,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:providiesMoreInformationOnTimeLimitsForReviewProcedures<br />
+						<strong>Name:</strong> epo:processesRequestsToParticipate<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -583,7 +536,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:executesPayment<br />
+						<strong>Name:</strong> epo:receivesTenders<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -606,7 +559,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isGroupLeader<br />
+						<strong>Name:</strong> epo:providiesMoreInformationOnTimeLimitsForReviewProcedures<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -621,15 +574,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA230.htm">epo:PlannedProcurementPart</a><br />
+						<a href="EA220.htm">epo:Lot</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isPlannedBy<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:plans<br />
+						<strong>Name:</strong> epo:executesPayment<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -652,7 +605,7 @@ function nameClassifier(name, separator)
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:providesOfflineAccessToProcurementDocuments<br />
+						<strong>Name:</strong> epo:isGroupLeader<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -660,6 +613,52 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1166" onclick="parent.toggleDiv('detailsDIVLink1166','DetailsImageLink1166')" />Details:
 							<div id="detailsDIVLink1166" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA230.htm">epo:PlannedProcurementPart</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:isPlannedBy<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:plans<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1167" onclick="parent.toggleDiv('detailsDIVLink1167','DetailsImageLink1167')" />Details:
+							<div id="detailsDIVLink1167" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA220.htm">epo:Lot</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:providesOfflineAccessToProcurementDocuments<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1168" onclick="parent.toggleDiv('detailsDIVLink1168','DetailsImageLink1168')" />Details:
+							<div id="detailsDIVLink1168" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -681,8 +680,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1167" onclick="parent.toggleDiv('detailsDIVLink1167','DetailsImageLink1167')" />Details:
-							<div id="detailsDIVLink1167" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1169" onclick="parent.toggleDiv('detailsDIVLink1169','DetailsImageLink1169')" />Details:
+							<div id="detailsDIVLink1169" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -704,8 +703,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1168" onclick="parent.toggleDiv('detailsDIVLink1168','DetailsImageLink1168')" />Details:
-							<div id="detailsDIVLink1168" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1170" onclick="parent.toggleDiv('detailsDIVLink1170','DetailsImageLink1170')" />Details:
+							<div id="detailsDIVLink1170" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -727,8 +726,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1169" onclick="parent.toggleDiv('detailsDIVLink1169','DetailsImageLink1169')" />Details:
-							<div id="detailsDIVLink1169" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1171" onclick="parent.toggleDiv('detailsDIVLink1171','DetailsImageLink1171')" />Details:
+							<div id="detailsDIVLink1171" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -760,8 +759,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1170" onclick="parent.toggleDiv('detailsDIVLink1170','DetailsImageLink1170')" />Details:
-							<div id="detailsDIVLink1170" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1172" onclick="parent.toggleDiv('detailsDIVLink1172','DetailsImageLink1172')" />Details:
+							<div id="detailsDIVLink1172" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -770,20 +769,7 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Property</td>
-					<td width="70%" class="TableHeading">Value</td>
-				</tr>
-			<tr>
-				<td width="30%" class="TableRow">isFinalSpecialization:</td>
-				<td width="70%" class="TableRow">0</td>
-			</tr>
-
-
-			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
