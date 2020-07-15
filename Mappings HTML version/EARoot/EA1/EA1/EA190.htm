@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>epo:EvaluationTerm</title>
+<title>epo::epo:EvaluationTerm</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -114,6 +114,64 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes561')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes561" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes561_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes561_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes561_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes561_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes561_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes561_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes561_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes561_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Based on the Award Dimension Type code list&lt;br/&gt;&lt;br/&gt;Let&#39;s say we have 5 different quality award criteria&lt;br/&gt;&lt;br/&gt;QUALITY&lt;br/&gt;&lt;br/&gt;1st - e.g. please describe how you&#39;ll make this machine (WEIGHT 20%)&lt;br/&gt;2nd - describe the workflow used to manufacture the machine (WEIGHT 25%)&lt;br/&gt;3rd - describe the materials used for each component of the machine (WEIGHT 10%)&lt;br/&gt;4th - describe the quality control measures (WEIGHT 5%)&lt;br/&gt;5th - describe how the manufacturing dead-lines (WEIGHT 40%)&lt;br/&gt;&lt;br/&gt;PRICE CRITERIA&lt;br/&gt;(list of criteria related to price)&lt;br/&gt;&lt;br/&gt;COST CRITERIA&lt;br/&gt;(list of criteria related to cost)&lt;br/&gt;&lt;br/&gt;Overall award criteria Weight 20% Price, 60% Quality, 20% Cost&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallQualityAwardCriteriaPonderation</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
 					<a href="#" onclick="parent.toggleData('DetailsImageAttributes562')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes562" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
@@ -152,22 +210,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Based on the Award Dimension Type code list&lt;br/&gt;&lt;br/&gt;Let&#39;s say we have 5 different quality award criteria&lt;br/&gt;&lt;br/&gt;QUALITY&lt;br/&gt;&lt;br/&gt;1st - e.g. please describe how you&#39;ll make this machine (WEIGHT 20%)&lt;br/&gt;2nd - describe the workflow used to manufacture the machine (WEIGHT 25%)&lt;br/&gt;3rd - describe the materials used for each component of the machine (WEIGHT 10%)&lt;br/&gt;4th - describe the quality control measures (WEIGHT 5%)&lt;br/&gt;5th - describe how the manufacturing dead-lines (WEIGHT 40%)&lt;br/&gt;&lt;br/&gt;PRICE CRITERIA&lt;br/&gt;(list of criteria related to price)&lt;br/&gt;&lt;br/&gt;COST CRITERIA&lt;br/&gt;(list of criteria related to cost)&lt;br/&gt;&lt;br/&gt;Overall award criteria Weight 20% Price, 60% Quality, 20% Cost&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallQualityAwardCriteriaPonderation</strong>
+					<i>Public Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallPriceAwardCriteriaPonderation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -215,7 +263,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallPriceAwardCriteriaPonderation</strong>
+					<i>Public Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallCostAwardCriteriaPonderation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -261,54 +309,6 @@ function nameClassifier(name, separator)
 						&nbsp;
 						
 				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallCostAwardCriteriaPonderation</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes565')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes565" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes565_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes565_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes565_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes565_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes565_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes565_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes565_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes565_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						&nbsp;
-						
-				</td>
 			</tr>
 	</table>
 </div>
@@ -335,8 +335,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink566" onclick="parent.toggleDiv('detailsDIVLink566','DetailsImageLink566')" />Details:
-							<div id="detailsDIVLink566" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink565" onclick="parent.toggleDiv('detailsDIVLink565','DetailsImageLink565')" />Details:
+							<div id="detailsDIVLink565" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -368,8 +368,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink567" onclick="parent.toggleDiv('detailsDIVLink567','DetailsImageLink567')" />Details:
-							<div id="detailsDIVLink567" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink566" onclick="parent.toggleDiv('detailsDIVLink566','DetailsImageLink566')" />Details:
+							<div id="detailsDIVLink566" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
