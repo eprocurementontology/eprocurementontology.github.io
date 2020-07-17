@@ -100,6 +100,7 @@ function nameClassifier(name, separator)
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -109,7 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Amount</i><br /><strong>&nbsp;&nbsp;epo:OverallAmount</strong>
+					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:CalculationMethod</strong>
 				</td>
 			</tr>
 			<tr>
@@ -158,7 +159,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			In the case of a procurement procedure it includes options and renewals.&lt;br/&gt;&lt;br/&gt;
+			Formula for obtaining values.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;The possible values are monetary values, ranking scores, criterion weighting.&lt;br/&gt;&lt;br/&gt;WG Approval 25/05/2018&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -167,7 +168,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Amount</i><br /><strong>&nbsp;&nbsp;epo:MinimumAmount</strong>
+					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:CurrencyType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -210,12 +211,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The currency used.&lt;br/&gt;&lt;br/&gt;WG Approval 09/06/2020&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Text</i><br /><strong>&nbsp;&nbsp;epo:CalculationMethod</strong>
+					<i>Public Amount</i><br /><strong>&nbsp;&nbsp;epo:MaximumAmount</strong>
 				</td>
 			</tr>
 			<tr>
@@ -264,7 +275,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Formula for obtaining values.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;The possible values are monetary values, ranking scores, criterion weighting.&lt;br/&gt;&lt;br/&gt;WG Approval 25/05/2018&lt;br/&gt;
+			The highest amount which can be spent within a procurement over its whole duration.&lt;br/&gt;&lt;br/&gt;WG Approval 11/10/2019&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -273,7 +284,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Amount</i><br /><strong>&nbsp;&nbsp;epo:MaximumAmount</strong>
+					<i>Public Amount</i><br /><strong>&nbsp;&nbsp;epo:MinimumAmount</strong>
 				</td>
 			</tr>
 			<tr>
@@ -316,22 +327,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The highest amount which can be spent within a procurement over its whole duration.&lt;br/&gt;&lt;br/&gt;WG Approval 11/10/2019&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public Code</i><br /><strong>&nbsp;&nbsp;epo:CurrencyType</strong>
+					<i>Public Amount</i><br /><strong>&nbsp;&nbsp;epo:OverallAmount</strong>
 				</td>
 			</tr>
 			<tr>
@@ -380,7 +381,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The currency used.&lt;br/&gt;&lt;br/&gt;WG Approval 09/06/2020&lt;br/&gt;
+			In the case of a procurement procedure it includes options and renewals.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -712,7 +713,20 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
