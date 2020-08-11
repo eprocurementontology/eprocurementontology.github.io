@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.2.1:1", "", "ccts", "EARoot/EA2/EA1/EA293.htm", "175.png", "30", "0", "", "Logical diagram0","{B0C416E7-3825-4a43-99E0-659306E74E22}");
+tocTab[tocTab.length] = new Array("0.2.1:2", "", "ccts:Amount", "EARoot/EA2/EA1/EA296.htm", "5.png", "E230", "0", "", "Class0","{83211DE7-FC08-41ca-90ED-B1D747548AC4}");
+tocTab[tocTab.length] = new Array("0.2.1:3", "", "ccts:Code", "EARoot/EA2/EA1/EA297.htm", "5.png", "E231", "0", "", "Class0","{CE9906F5-A833-4f77-9B6A-6B3B29A35460}");
+tocTab[tocTab.length] = new Array("0.2.1:4", "", "ccts:Identifier", "EARoot/EA2/EA1/EA298.htm", "5.png", "E232", "0", "", "Class0","{ECF07FF0-8693-499d-AD7B-7484B8FDA398}");
+tocTab[tocTab.length] = new Array("0.2.1:5", "", "ccts:Indicator", "EARoot/EA2/EA1/EA299.htm", "5.png", "E233", "0", "", "Class0","{911C6357-DC1C-4ff7-9744-616046F6F0BF}");
+tocTab[tocTab.length] = new Array("0.2.1:6", "", "ccts:Measure", "EARoot/EA2/EA1/EA300.htm", "5.png", "E234", "0", "", "Class0","{7B1D00E9-E850-4739-8639-19A76F6FFF4D}");
+tocTab[tocTab.length] = new Array("0.2.1:7", "", "ccts:Numeric", "EARoot/EA2/EA1/EA301.htm", "5.png", "E235", "0", "", "Class0","{BA0ECB44-F297-4940-91DA-4E3997919BD8}");
+tocTab[tocTab.length] = new Array("0.2.1:8", "", "ccts:Quantity", "EARoot/EA2/EA1/EA302.htm", "5.png", "E236", "0", "", "Class0","{F9677E04-DED2-4052-8D25-BA714BA9C3EC}");
+tocTab[tocTab.length] = new Array("0.2.1:9", "", "ccts:Text", "EARoot/EA2/EA1/EA303.htm", "5.png", "E237", "0", "", "Class0","{B3A020A7-49BD-4d49-87CD-87B194FCC323}");
