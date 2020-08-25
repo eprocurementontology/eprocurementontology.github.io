@@ -101,7 +101,6 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -111,7 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public ccts:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
+					<i>Public ccts:Indicator</i><br /><strong>&nbsp;&nbsp;epo:Variant</strong>
 				</td>
 			</tr>
 			<tr>
@@ -154,12 +153,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Alternative solution to fulfil the buyer&#39;s needs as opposed to solutions indicated in the procurement documents.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;The permission to offer variants is only allowed if specified in a Contract Notice or a Prior Information Notice that used as a means for calling for a competition.&lt;br/&gt;The buyer lays out minimum requirements in the procurement documents that must be respected by tenderers submitting variants.&lt;br/&gt;&lt;br/&gt;WG Approval 29/05/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public ccts:Code</i><br /><strong>&nbsp;&nbsp;epo:Subcontracting</strong>
+					<i>Public ccts:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -207,7 +216,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public ccts:Indicator</i><br /><strong>&nbsp;&nbsp;epo:Variant</strong>
+					<i>Public ccts:Code</i><br /><strong>&nbsp;&nbsp;epo:Subcontracting</strong>
 				</td>
 			</tr>
 			<tr>
@@ -250,17 +259,7 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Alternative solution to fulfil the buyer&#39;s needs as opposed to solutions indicated in the procurement documents.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;The permission to offer variants is only allowed if specified in a Contract Notice or a Prior Information Notice that used as a means for calling for a competition.&lt;br/&gt;The buyer lays out minimum requirements in the procurement documents that must be respected by tenderers submitting variants.&lt;br/&gt;&lt;br/&gt;WG Approval 29/05/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>
@@ -563,20 +562,7 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Property</td>
-					<td width="70%" class="TableHeading">Value</td>
-				</tr>
-			<tr>
-				<td width="30%" class="TableRow">isFinalSpecialization:</td>
-				<td width="70%" class="TableRow">0</td>
-			</tr>
-
-
-			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

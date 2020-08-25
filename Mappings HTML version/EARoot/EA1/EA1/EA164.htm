@@ -101,7 +101,6 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -111,7 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public ccts:Date</i><br /><strong>&nbsp;&nbsp;epo:ContractConclusionDate</strong>
+					<i>Public ccts:Text</i><br /><strong>&nbsp;&nbsp;epo:Title</strong>
 				</td>
 			</tr>
 			<tr>
@@ -160,7 +159,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The date the contract was signed by the last signatory party.&lt;br/&gt;&lt;br/&gt;&lt;u&gt;Additional Information:&lt;/u&gt;&lt;br/&gt;In exceptional cases contracts may be concluded without signature and therefore another date may be used. The date of contract conclusion is always later than the end of any standstill period.&lt;br/&gt;This concept is not to be confused with the date of completion/end of the contract.&lt;br/&gt;&lt;br/&gt;WG Approval 09/01/2020&lt;br/&gt;
+			A short self-descriptive name of the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;For example, the title of a planned part that may become a procedure or a lot in the future; the title of a contract, etc.&lt;br/&gt;&lt;br/&gt;(WG Approval 11-11-2019)&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -169,7 +168,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public ccts:Date</i><br /><strong>&nbsp;&nbsp;epo:EntryintoForceDate</strong>
+					<i>Public ccts:Date</i><br /><strong>&nbsp;&nbsp;epo:ContractConclusionDate</strong>
 				</td>
 			</tr>
 			<tr>
@@ -218,7 +217,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The date on which the contract enters into force.&lt;br/&gt;&lt;br/&gt;Additional information: &lt;br/&gt;&lt;br/&gt;This is generally the date on which the fulfillment of the contract begins.&lt;br/&gt;&lt;br/&gt;WG approval 05/11/2019&lt;br/&gt;
+			The date the contract was signed by the last signatory party.&lt;br/&gt;&lt;br/&gt;&lt;u&gt;Additional Information:&lt;/u&gt;&lt;br/&gt;In exceptional cases contracts may be concluded without signature and therefore another date may be used. The date of contract conclusion is always later than the end of any standstill period.&lt;br/&gt;This concept is not to be confused with the date of completion/end of the contract.&lt;br/&gt;&lt;br/&gt;WG Approval 09/01/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -227,7 +226,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public ccts:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
+					<i>Public ccts:Date</i><br /><strong>&nbsp;&nbsp;epo:EntryintoForceDate</strong>
 				</td>
 			</tr>
 			<tr>
@@ -270,12 +269,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The date on which the contract enters into force.&lt;br/&gt;&lt;br/&gt;Additional information: &lt;br/&gt;&lt;br/&gt;This is generally the date on which the fulfillment of the contract begins.&lt;br/&gt;&lt;br/&gt;WG approval 05/11/2019&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public ccts:Text</i><br /><strong>&nbsp;&nbsp;epo:Title</strong>
+					<i>Public ccts:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -318,17 +327,7 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			A short self-descriptive name of the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;For example, the title of a planned part that may become a procedure or a lot in the future; the title of a contract, etc.&lt;br/&gt;&lt;br/&gt;(WG Approval 11-11-2019)&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>
@@ -747,20 +746,7 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Property</td>
-					<td width="70%" class="TableHeading">Value</td>
-				</tr>
-			<tr>
-				<td width="30%" class="TableRow">isFinalSpecialization:</td>
-				<td width="70%" class="TableRow">0</td>
-			</tr>
-
-
-			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
