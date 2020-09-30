@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.1.2:1", "", "TED Extension", "EARoot/EA1/EA2/EA273.htm", "175.png", "29", "0", "", "Logical diagram0","{2124EE67-550E-4bca-8D2D-F24DEDE46438}");
-tocTab[tocTab.length] = new Array("0.1.2:2", "", "reg2015:Procedure", "EARoot/EA1/EA2/EA276.htm", "5.png", "E227", "0", "", "Class0","{523EF490-5FBA-43d9-88F5-CC29850AD902}");
+tocTab[tocTab.length] = new Array("0.1.2:1", "", "TED Extension", "EARoot/EA1/EA2/EA275.htm", "175.png", "29", "0", "", "Logical diagram0","{2124EE67-550E-4bca-8D2D-F24DEDE46438}");
+tocTab[tocTab.length] = new Array("0.1.2:2", "", "reg2015:Procedure", "EARoot/EA1/EA2/EA278.htm", "5.png", "E227", "0", "", "Class0","{523EF490-5FBA-43d9-88F5-CC29850AD902}");
