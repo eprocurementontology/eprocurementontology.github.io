@@ -101,7 +101,6 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -111,7 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Name</strong>
 				</td>
 			</tr>
 			<tr>
@@ -160,7 +159,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Self-explanatory text about a concept.&lt;br/&gt;&lt;br/&gt;WG Approval 23/04/2020&lt;br/&gt;
+			A short text representing an instance of the class.&lt;br/&gt;&lt;br/&gt;WG Approval 17/09/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -169,7 +168,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Formula</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
 				</td>
 			</tr>
 			<tr>
@@ -218,7 +217,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The mathematical equation or any other description that produce a result relating to the instance of the class.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;For example, in the case of particular selection and award criteria this formula can be used for the weighing and scoring of the criteria (e.g. non-linear weighing, the analytic hierarchy process) when a weighing cannot be expressed per criterion.&lt;br/&gt;&lt;br/&gt;WG Approval 08/09/2020&lt;br/&gt;&lt;br/&gt;
+			Self-explanatory text about a concept.&lt;br/&gt;&lt;br/&gt;WG Approval 23/04/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -227,7 +226,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Name</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:Type</strong>
 				</td>
 			</tr>
 			<tr>
@@ -276,7 +275,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A short text representing an instance of the class.&lt;br/&gt;&lt;br/&gt;WG Approval 17/09/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			The characteristic of an instance of this concept&#160;&#160;within a given classification.&lt;br/&gt;&lt;br/&gt;Additional information: &lt;br/&gt;&lt;br/&gt;A classification is normally a controlled vocabulary (e.g. a codelist or a taxonomy) the use of which is commonly agreed by a community of users in the context of a business or problem domain. &lt;br/&gt;&lt;br/&gt;WG Approval 15/09/2020&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -285,7 +284,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:Type</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Formula</strong>
 				</td>
 			</tr>
 			<tr>
@@ -334,7 +333,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The characteristic of an instance of this concept&#160;&#160;within a given classification.&lt;br/&gt;&lt;br/&gt;Additional information: &lt;br/&gt;&lt;br/&gt;A classification is normally a controlled vocabulary (e.g. a codelist or a taxonomy) the use of which is commonly agreed by a community of users in the context of a business or problem domain. &lt;br/&gt;&lt;br/&gt;WG Approval 15/09/2020&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			The mathematical equation or any other description that produce a result relating to the instance of the class.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;For example, in the case of particular selection and award criteria this formula can be used for the weighing and scoring of the criteria (e.g. non-linear weighing, the analytic hierarchy process) when a weighing cannot be expressed per criterion.&lt;br/&gt;&lt;br/&gt;WG Approval 08/09/2020&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -433,20 +432,7 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Property</td>
-					<td width="70%" class="TableHeading">Value</td>
-				</tr>
-			<tr>
-				<td width="30%" class="TableRow">isFinalSpecialization:</td>
-				<td width="70%" class="TableRow">0</td>
-			</tr>
-
-
-			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

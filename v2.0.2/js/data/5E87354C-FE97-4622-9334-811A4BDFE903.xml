@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.4.4:1", "", "ccts", "EARoot/EA4/EA4/EA319.html", "175.png", "34", "0", "", "Logical diagram0","{B0C416E7-3825-4a43-99E0-659306E74E22}");
+tocTab[tocTab.length] = new Array("0.4.4:1", "", "epo datatypes", "EARoot/EA4/EA4/EA319.html", "175.png", "34", "0", "", "Logical diagram0","{B0C416E7-3825-4a43-99E0-659306E74E22}");
 tocTab[tocTab.length] = new Array("0.4.4:2", "", "epo:Amount", "EARoot/EA4/EA4/EA322.html", "5.png", "E247", "0", "", "Class0","{83211DE7-FC08-41ca-90ED-B1D747548AC4}");
 tocTab[tocTab.length] = new Array("0.4.4:3", "", "epo:Code", "EARoot/EA4/EA4/EA323.html", "5.png", "E248", "0", "", "Class0","{CE9906F5-A833-4f77-9B6A-6B3B29A35460}");
 tocTab[tocTab.length] = new Array("0.4.4:4", "", "epo:Date", "EARoot/EA4/EA4/EA324.html", "230.png", "E255", "0", "", "DataType0","{C405EB54-2EE3-47ed-BF3D-95A0C8526C28}");

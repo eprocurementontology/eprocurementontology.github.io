@@ -100,7 +100,6 @@ function nameClassifier(name, separator)
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -110,7 +109,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ECataloguePermission</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:SubmissionDocumentType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -159,7 +158,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The extent to which electronic catalogues may be used in tenders.&lt;br/&gt;&lt;br/&gt;WG Approval 03/10/2019&lt;br/&gt;
+			The type of document being sent to the buyer.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -168,7 +167,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ESubmissioneSignature</strong>
+					<i>Public epo:DateTime</i><br /><strong>&nbsp;&nbsp;epo:ReceiptDeadline</strong>
 				</td>
 			</tr>
 			<tr>
@@ -217,7 +216,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The submitted information is required to be signed electronically.&lt;br/&gt;&lt;br/&gt;Additional Information: &lt;br/&gt;&lt;br/&gt;Signature can be defined as &quot;data in electronic form which is attached to or logically associated with other data in electronic form and which is used by the signatory to sign. &lt;br/&gt;For more details on the meaning and uses of electronic signature you may consult different authoritative sources, a relevant one being for instance the Regulation (EU) 910/2014 on electronic identification and trust services for electronic transactions in the internal market.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
+			The time limit for receiving submissions.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;This is the&#160;&#160;deadline by which the buyer must receive submissions (e.g. tenders, requests to participate, clarifications, etc.) and is not the time at which the information is submitted by the economic operator.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -226,7 +225,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:eSubmissionPermission</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:Language</strong>
 				</td>
 			</tr>
 			<tr>
@@ -275,7 +274,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The requirements as to what extent electronic submission is allowed.&lt;br/&gt;&lt;br/&gt;WG Approval 03/10/2019&lt;br/&gt;
+			Language in which the submitted information is to be expressed. &lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -284,7 +283,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:GuaranteeDescription</strong>
+					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:GuaranteeRequired</strong>
 				</td>
 			</tr>
 			<tr>
@@ -333,7 +332,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Information on the financial commitment required from the economic operator. &lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;1.&#160;&#160;This information may include the amount and the way of delivering of the guarantee&lt;br/&gt;2. The financial commitment may be retained by the buyer in the case the tenderer withdraws the submitted information (i.e. tender, expression of interest and request for participation, but not request for clarifications) before the award of the contract or does not sign the contract.&lt;br/&gt;3. Usual modalities are bonds, cheques, loans, other.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/20&lt;br/&gt;
+			The submitted information must include a financial commitment to be used in case of default.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;See the additional information provided in&#160;&#160;the definition of the &#39;Guarantee Description&#39; element.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/20&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -342,7 +341,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:GuaranteeRequired</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:GuaranteeDescription</strong>
 				</td>
 			</tr>
 			<tr>
@@ -391,7 +390,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The submitted information must include a financial commitment to be used in case of default.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;See the additional information provided in&#160;&#160;the definition of the &#39;Guarantee Description&#39; element.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/20&lt;br/&gt;
+			Information on the financial commitment required from the economic operator. &lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;1.&#160;&#160;This information may include the amount and the way of delivering of the guarantee&lt;br/&gt;2. The financial commitment may be retained by the buyer in the case the tenderer withdraws the submitted information (i.e. tender, expression of interest and request for participation, but not request for clarifications) before the award of the contract or does not sign the contract.&lt;br/&gt;3. Usual modalities are bonds, cheques, loans, other.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/20&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -400,7 +399,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:Language</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:eSubmissionPermission</strong>
 				</td>
 			</tr>
 			<tr>
@@ -449,7 +448,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Language in which the submitted information is to be expressed. &lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
+			The requirements as to what extent electronic submission is allowed.&lt;br/&gt;&lt;br/&gt;WG Approval 03/10/2019&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -458,7 +457,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:LateSubmissionInformationDescription</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:NonElectronicSubmissionJustification</strong>
 				</td>
 			</tr>
 			<tr>
@@ -507,7 +506,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A narrative text explaining the content of the economic operator information that can be submitted late.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;This does not apply to requests for clarifications.&lt;br/&gt;
+			Reason for not accepting electronic information.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -516,7 +515,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:LateSubmissionPermission</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:NonElectronicSubmissionDescription</strong>
 				</td>
 			</tr>
 			<tr>
@@ -565,7 +564,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Whether economic operator-related information can be supplemented even after the submission deadline.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;This is specific to the information on the economic operator and not the actual offer. This does&#160;&#160;not apply to the requests for clarification.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
+			Textual explanation of how non-electronic information is to be presented.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -574,7 +573,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:MultipleTenderSubmissionAllowed</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ESubmissioneSignature</strong>
 				</td>
 			</tr>
 			<tr>
@@ -623,7 +622,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Tenderers may submit more than one competing tenders.&lt;br/&gt;&lt;br/&gt;WG Approval 10/10/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			The submitted information is required to be signed electronically.&lt;br/&gt;&lt;br/&gt;Additional Information: &lt;br/&gt;&lt;br/&gt;Signature can be defined as &quot;data in electronic form which is attached to or logically associated with other data in electronic form and which is used by the signatory to sign. &lt;br/&gt;For more details on the meaning and uses of electronic signature you may consult different authoritative sources, a relevant one being for instance the Regulation (EU) 910/2014 on electronic identification and trust services for electronic transactions in the internal market.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -632,7 +631,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:NonElectronicSubmissionDescription</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:LateSubmissionPermission</strong>
 				</td>
 			</tr>
 			<tr>
@@ -681,7 +680,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Textual explanation of how non-electronic information is to be presented.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			Whether economic operator-related information can be supplemented even after the submission deadline.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;This is specific to the information on the economic operator and not the actual offer. This does&#160;&#160;not apply to the requests for clarification.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -690,7 +689,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:NonElectronicSubmissionJustification</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:LateSubmissionInformationDescription</strong>
 				</td>
 			</tr>
 			<tr>
@@ -739,7 +738,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Reason for not accepting electronic information.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
+			A narrative text explaining the content of the economic operator information that can be submitted late.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;This does not apply to requests for clarifications.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -748,7 +747,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:DateTime</i><br /><strong>&nbsp;&nbsp;epo:ReceiptDeadline</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ECataloguePermission</strong>
 				</td>
 			</tr>
 			<tr>
@@ -797,7 +796,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The time limit for receiving submissions.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;This is the&#160;&#160;deadline by which the buyer must receive submissions (e.g. tenders, requests to participate, clarifications, etc.) and is not the time at which the information is submitted by the economic operator.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
+			The extent to which electronic catalogues may be used in tenders.&lt;br/&gt;&lt;br/&gt;WG Approval 03/10/2019&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -806,7 +805,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:SubmissionDocumentType</strong>
+					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:MultipleTenderSubmissionAllowed</strong>
 				</td>
 			</tr>
 			<tr>
@@ -855,7 +854,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The type of document being sent to the buyer.&lt;br/&gt;&lt;br/&gt;WG Approval 21/07/2020&lt;br/&gt;
+			Tenderers may submit more than one competing tenders.&lt;br/&gt;&lt;br/&gt;WG Approval 10/10/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -1003,20 +1002,7 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Property</td>
-					<td width="70%" class="TableHeading">Value</td>
-				</tr>
-			<tr>
-				<td width="30%" class="TableRow">isFinalSpecialization:</td>
-				<td width="70%" class="TableRow">0</td>
-			</tr>
-
-
-			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

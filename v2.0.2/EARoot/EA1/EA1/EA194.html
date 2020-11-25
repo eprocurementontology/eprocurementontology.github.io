@@ -98,7 +98,6 @@ function nameClassifier(name, separator)
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -108,7 +107,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Numeric</i><br /><strong>&nbsp;&nbsp;epo:FixedValue</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:FixedValueType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -151,12 +150,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The method to interpret the fixed value as pertaining to a total or unit.&lt;br/&gt;&lt;br/&gt;WG Approval 17/09/2019&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:FixedValueType</strong>
+					<i>Public epo:Numeric</i><br /><strong>&nbsp;&nbsp;epo:FixedValue</strong>
 				</td>
 			</tr>
 			<tr>
@@ -199,36 +208,13 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The method to interpret the fixed value as pertaining to a total or unit.&lt;br/&gt;&lt;br/&gt;WG Approval 17/09/2019&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>
 	</table>
 </div>
-		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Property</td>
-					<td width="70%" class="TableHeading">Value</td>
-				</tr>
-			<tr>
-				<td width="30%" class="TableRow">isFinalSpecialization:</td>
-				<td width="70%" class="TableRow">0</td>
-			</tr>
-
-
-			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
