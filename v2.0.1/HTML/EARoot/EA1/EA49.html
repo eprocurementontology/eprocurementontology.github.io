@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Roles and Subroles</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA50.png" usemap="#EA50" border="0" />
+
+<MAP NAME="EA50">
+<area shape="rect" coords="744,554,881,626" href="./EA1/EA168.html" target="_self">
+<area shape="rect" coords="1292,38,1436,136" href="./EA1/EA241.html" target="_self">
+<area shape="rect" coords="1528,456,1647,567" href="./EA1/EA272.html" target="_self">
+<area shape="rect" coords="1268,252,1478,322" href="./EA1/EA240.html" target="_self">
+<area shape="rect" coords="821,690,941,760" href="./EA1/EA210.html" target="_self">
+<area shape="rect" coords="440,694,560,764" href="./EA1/EA244.html" target="_self">
+<area shape="rect" coords="1154,689,1274,759" href="./EA1/EA189.html" target="_self">
+<area shape="rect" coords="1498,850,1653,935" href="./EA1/EA181.html" target="_self">
+<area shape="rect" coords="606,172,845,299" href="./EA1/EA174.html" target="_self">
+<area shape="rect" coords="1393,1731,1493,1811" href="./EA1/EA164.html" target="_self">
+<area shape="rect" coords="1244,1377,1344,1457" href="./EA1/EA254.html" target="_self">
+<area shape="rect" coords="726,1128,1065,1491" href="./EA1/EA208.html" target="_self">
+<area shape="rect" coords="231,1401,429,1491" href="./EA1/EA226.html" target="_self">
+<area shape="rect" coords="892,1559,1062,1683" href="./EA1/EA157.html" target="_self">
+<area shape="rect" coords="1377,1547,1527,1627" href="./EA1/EA271.html" target="_self">
+<area shape="rect" coords="1377,1387,1478,1447" href="./EA1/EA264.html" target="_self">
+<area shape="rect" coords="1201,2038,1375,2175" href="./EA1/EA219.html" target="_self">
+<area shape="rect" coords="882,1885,1056,1965" href="./EA1/EA215.html" target="_self">
+<area shape="rect" coords="264,1537,425,1637" href="./EA1/EA159.html" target="_self">
+<area shape="rect" coords="2072,802,2222,882" href="./EA1/EA217.html" target="_self">
+<area shape="rect" coords="2078,1559,2207,1639" href="./EA1/EA258.html" target="_self">
+<area shape="rect" coords="2054,1297,2211,1473" href="./EA1/EA220.html" target="_self">
+<area shape="rect" coords="1712,376,1906,568" href="./EA1/EA144.html" target="_self">
+<area shape="rect" coords="252,382,560,564" href="./EA1/EA246.html" target="_self">
+<area shape="rect" coords="961,693,1124,754" href="./EA1/EA232.html" target="_self">
+<area shape="rect" coords="585,690,784,769" href="./EA1/EA155.html" target="_self">
+<area shape="rect" coords="1307,662,1527,776" href="./EA1/EA179.html" target="_self">
+<area shape="rect" coords="224,650,415,764" href="./EA1/EA149.html" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Roles and Subroles : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">30/06/2020 9:27:03</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">08/10/2020 11:43:59</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">jseguraf</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{5655E7B0-4DB6-41fb-A888-62C80EADD47C}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>
