@@ -101,6 +101,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -110,7 +111,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Date</i><br /><strong>&nbsp;&nbsp;epo:AwardDateScheduled</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:AdditionalInformation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -153,12 +154,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Supplementary data about the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;For example, information about the Lot not specified elsewhere in the Notice.&lt;br/&gt;&lt;br/&gt;WG Approval 15/10/2019&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
+					<i>Public epo:Date</i><br /><strong>&nbsp;&nbsp;epo:AwardDateScheduled</strong>
 				</td>
 			</tr>
 			<tr>
@@ -201,22 +212,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Self-explanatory text about a concept.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:GPAUsage</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
 				</td>
 			</tr>
 			<tr>
@@ -265,7 +266,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Specifies whether the Agreement on Government Procurement (GPA) applies.&lt;br/&gt;&lt;br/&gt;Additional information: &lt;br/&gt;The GPA aims to establish a multilateral framework of balanced rights and obligations relating to public contracts with a view to achieving the liberalization and expansion of world trade.&lt;br/&gt;&lt;br/&gt;WG Approval 15/10/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			Self-explanatory text about a concept.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -274,7 +275,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
+					<i>Public epo:Date</i><br /><strong>&nbsp;&nbsp;epo:EstimatedTenderInvitationDate</strong>
 				</td>
 			</tr>
 			<tr>
@@ -322,7 +323,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ReservedProcurement</strong>
+					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:GPAUsage</strong>
 				</td>
 			</tr>
 			<tr>
@@ -365,12 +366,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Specifies whether the Agreement on Government Procurement (GPA) applies.&lt;br/&gt;&lt;br/&gt;Additional information: &lt;br/&gt;The GPA aims to establish a multilateral framework of balanced rights and obligations relating to public contracts with a view to achieving the liberalization and expansion of world trade.&lt;br/&gt;&lt;br/&gt;WG Approval 15/10/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Title</strong>
+					<i>Public epo:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -413,22 +424,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			A short self-descriptive name of the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;For example, the title of a planned part that may become a procedure or a lot in the future; the title of a contract, etc.&lt;br/&gt;&lt;br/&gt;(WG Approval 11-11-2019)&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:VariantsPermission</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:PerformingStafQualificationInformation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -471,22 +472,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The obligation or possibility for tenderers to submit variants or not.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;Variants are alternative ways to fulfil the buyer&#39;s needs as opposed to solutions indicated in the procurement documents.&lt;br/&gt;&lt;br/&gt;eForms: Whether tenderers are required, allowed or forbidden to submit tenders which fulfil the buyer&#39;s needs differently than as proposed in the procurement documents. &lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;Further conditions for submitting variant tenders are in the procurement documents.&lt;br/&gt;&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:SMESuitable</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ReservedProcurement</strong>
 				</td>
 			</tr>
 			<tr>
@@ -529,22 +520,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The Lot is suitable for small and medium enterprises (SMEs).&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;This allows the buyer to make emphasis on the fact that the procedure has been designed having SMEs in mind. This indicator is also to be reflected in the selection criteria.&lt;br/&gt;&lt;br/&gt;For example, number of employees and turnover are applicable to the definition of an SME.&lt;br/&gt;&lt;br/&gt;WG Approval 15/10/2019&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:AdditionalInformation</strong>
+					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:SMESuitable</strong>
 				</td>
 			</tr>
 			<tr>
@@ -593,7 +574,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Supplementary data about the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;For example, information about the Lot not specified elsewhere in the Notice.&lt;br/&gt;&lt;br/&gt;WG Approval 15/10/2019&lt;br/&gt;
+			The Lot is suitable for small and medium enterprises (SMEs).&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;This allows the buyer to make emphasis on the fact that the procedure has been designed having SMEs in mind. This indicator is also to be reflected in the selection criteria.&lt;br/&gt;&lt;br/&gt;For example, number of employees and turnover are applicable to the definition of an SME.&lt;br/&gt;&lt;br/&gt;WG Approval 15/10/2019&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -602,7 +583,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:PerformingStafQualificationInformation</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Title</strong>
 				</td>
 			</tr>
 			<tr>
@@ -645,12 +626,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A short self-descriptive name of the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;For example, the title of a planned part that may become a procedure or a lot in the future; the title of a contract, etc.&lt;br/&gt;&lt;br/&gt;(WG Approval 11-11-2019)&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Date</i><br /><strong>&nbsp;&nbsp;epo:EstimatedTenderInvitationDate</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:VariantsPermission</strong>
 				</td>
 			</tr>
 			<tr>
@@ -693,7 +684,17 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The obligation or possibility for tenderers to submit variants or not.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;Variants are alternative ways to fulfil the buyer&#39;s needs as opposed to solutions indicated in the procurement documents.&lt;br/&gt;&lt;br/&gt;eForms: Whether tenderers are required, allowed or forbidden to submit tenders which fulfil the buyer&#39;s needs differently than as proposed in the procurement documents. &lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;Further conditions for submitting variant tenders are in the procurement documents.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>
@@ -2200,7 +2201,20 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

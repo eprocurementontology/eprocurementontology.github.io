@@ -101,6 +101,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -110,7 +111,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:AdditionalInformation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -159,7 +160,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A unique identifier of the instance of the concept.&lt;br/&gt;
+			Supplementary data about the instance of the concept.&lt;br/&gt;&lt;br/&gt;WG Approval 30/09/2019&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -168,7 +169,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:URI</i><br /><strong>&nbsp;&nbsp;epo:URL</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
 				</td>
 			</tr>
 			<tr>
@@ -217,7 +218,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The identifier of a resource.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;For example:&lt;br/&gt;&lt;br/&gt;1. The URL of the system from where to access the procurement documents;&lt;br/&gt;2. The URL of the system for the submission of tender documents;&lt;br/&gt;3. The URL of the system from where to download a tool to communicate with the Buyer;&lt;br/&gt;4. The URL of the system used by a Technique to allow Economic Operators to exchange information with the Buyer (e.g. eAuction and DPS Systems)&lt;br/&gt;5. The URL of the system used to exchange information between Buyer and EO for questions and clarifications;&lt;br/&gt;&lt;br/&gt;WG Approval 30/09/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			A narrative text explaining the content of an instance of the class / Self-explanatory text about a concept.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -226,7 +227,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:AdditionalInformation</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Endpoint</strong>
 				</td>
 			</tr>
 			<tr>
@@ -275,7 +276,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Supplementary data about the instance of the concept.&lt;br/&gt;&lt;br/&gt;WG Approval 30/09/2019&lt;br/&gt;&lt;br/&gt;
+			The value identifying a communication network node, required to gain access to a service.&lt;br/&gt;&lt;br/&gt;Additional information&lt;br/&gt;&lt;br/&gt;Examples:&lt;br/&gt;https://data.gov.es/sdg?serviceId=diploma-request&lt;br/&gt;mailto:myname@mycompany.com&lt;br/&gt;+33 6090 92 81 80 Ext. 3213&lt;br/&gt;&lt;br/&gt;WG Approval 07/05/2020&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -284,7 +285,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
+					<i>Public epo:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -333,7 +334,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A narrative text explaining the content of an instance of the class / Self-explanatory text about a concept.&lt;br/&gt;
+			A unique identifier of the instance of the concept.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -342,7 +343,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Endpoint</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Name</strong>
 				</td>
 			</tr>
 			<tr>
@@ -391,7 +392,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The value identifying a communication network node, required to gain access to a service.&lt;br/&gt;&lt;br/&gt;Additional information&lt;br/&gt;&lt;br/&gt;Examples:&lt;br/&gt;https://data.gov.es/sdg?serviceId=diploma-request&lt;br/&gt;mailto:myname@mycompany.com&lt;br/&gt;+33 6090 92 81 80 Ext. 3213&lt;br/&gt;&lt;br/&gt;WG Approval 07/05/2020&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			A short text representing an instance of the class.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -400,7 +401,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Name</strong>
+					<i>Public epo:URI</i><br /><strong>&nbsp;&nbsp;epo:URL</strong>
 				</td>
 			</tr>
 			<tr>
@@ -449,7 +450,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A short text representing an instance of the class.&lt;br/&gt;
+			The identifier of a resource.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;For example:&lt;br/&gt;&lt;br/&gt;1. The URL of the system from where to access the procurement documents;&lt;br/&gt;2. The URL of the system for the submission of tender documents;&lt;br/&gt;3. The URL of the system from where to download a tool to communicate with the Buyer;&lt;br/&gt;4. The URL of the system used by a Technique to allow Economic Operators to exchange information with the Buyer (e.g. eAuction and DPS Systems)&lt;br/&gt;5. The URL of the system used to exchange information between Buyer and EO for questions and clarifications;&lt;br/&gt;&lt;br/&gt;WG Approval 30/09/2019&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -756,7 +757,20 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

@@ -101,6 +101,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -398,7 +399,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:CountrySubentity</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:CountryCode</strong>
 				</td>
 			</tr>
 			<tr>
@@ -446,7 +447,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:CountrySubentityCode</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:CountrySubentity</strong>
 				</td>
 			</tr>
 			<tr>
@@ -494,7 +495,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Department</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:CountrySubentityCode</strong>
 				</td>
 			</tr>
 			<tr>
@@ -542,7 +543,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:District</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Department</strong>
 				</td>
 			</tr>
 			<tr>
@@ -590,7 +591,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Floor</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:District</strong>
 				</td>
 			</tr>
 			<tr>
@@ -638,7 +639,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Floor</strong>
 				</td>
 			</tr>
 			<tr>
@@ -686,7 +687,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:InhouseMail</strong>
+					<i>Public epo:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -734,7 +735,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:MarkAttention</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:InhouseMail</strong>
 				</td>
 			</tr>
 			<tr>
@@ -782,7 +783,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:MarkCare</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:MarkAttention</strong>
 				</td>
 			</tr>
 			<tr>
@@ -830,7 +831,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:PlotIdentification</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:MarkCare</strong>
 				</td>
 			</tr>
 			<tr>
@@ -878,7 +879,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:PostalZone</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:PlotIdentification</strong>
 				</td>
 			</tr>
 			<tr>
@@ -926,7 +927,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Postbox</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:PostalZone</strong>
 				</td>
 			</tr>
 			<tr>
@@ -974,7 +975,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Region</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Postbox</strong>
 				</td>
 			</tr>
 			<tr>
@@ -1022,7 +1023,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Room</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Region</strong>
 				</td>
 			</tr>
 			<tr>
@@ -1070,7 +1071,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:StreetName</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Room</strong>
 				</td>
 			</tr>
 			<tr>
@@ -1118,7 +1119,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:TimezoneOffset</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:StreetName</strong>
 				</td>
 			</tr>
 			<tr>
@@ -1166,7 +1167,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:CountryCode</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:TimezoneOffset</strong>
 				</td>
 			</tr>
 			<tr>
@@ -1374,7 +1375,20 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

@@ -100,6 +100,7 @@ function nameClassifier(name, separator)
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -109,7 +110,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:FrameworkAgreementType</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:BuyerCoverage</strong>
 				</td>
 			</tr>
 			<tr>
@@ -158,7 +159,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The form of framework agreement used in a procurement procedure.&lt;br/&gt;&lt;br/&gt;Addition information:&lt;br/&gt;&lt;br/&gt;A concept to distinguish the different types of framework agreement, which are: &lt;br/&gt;1. Framework agreement without reopening of competition,&lt;br/&gt;2. Framework agreement with reopening of competition, or &lt;br/&gt;3. Framework agreement partly without reopening of competition.&lt;br/&gt;&lt;br/&gt;WG Approval 19/09/2019 &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			Buyers that can use the Framework Agreement not mentioned by name.&lt;br/&gt;&lt;br/&gt;Additional Information: &lt;br/&gt;For example,&#160;&#160;&quot;all hospitals in the Tuscany region&lt;br/&gt;&lt;br/&gt;WG Approval 2019-05-06&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -167,7 +168,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:BuyerCoverage</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:DurationExtensionJustification</strong>
 				</td>
 			</tr>
 			<tr>
@@ -216,7 +217,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Buyers that can use the Framework Agreement not mentioned by name.&lt;br/&gt;&lt;br/&gt;Additional Information: &lt;br/&gt;For example,&#160;&#160;&quot;all hospitals in the Tuscany region&lt;br/&gt;&lt;br/&gt;WG Approval 2019-05-06&lt;br/&gt;
+			The justification for exceptional cases when the duration of the framework agreement exceeds the legal limits. &lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;Four years in the case of the general procurement Directive, seven years in the case of the defence Directive, and eight years in the case of the sectoral Directive.&lt;br/&gt;&lt;br/&gt;WG Approval 26/09/2019&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -225,7 +226,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:DurationExtensionJustification</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:FrameworkAgreementType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -274,7 +275,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The justification for exceptional cases when the duration of the framework agreement exceeds the legal limits. &lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;Four years in the case of the general procurement Directive, seven years in the case of the defence Directive, and eight years in the case of the sectoral Directive.&lt;br/&gt;&lt;br/&gt;WG Approval 26/09/2019&lt;br/&gt;
+			The form of framework agreement used in a procurement procedure.&lt;br/&gt;&lt;br/&gt;Addition information:&lt;br/&gt;&lt;br/&gt;A concept to distinguish the different types of framework agreement, which are: &lt;br/&gt;1. Framework agreement without reopening of competition,&lt;br/&gt;2. Framework agreement with reopening of competition, or &lt;br/&gt;3. Framework agreement partly without reopening of competition.&lt;br/&gt;&lt;br/&gt;WG Approval 19/09/2019 &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -422,7 +423,20 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

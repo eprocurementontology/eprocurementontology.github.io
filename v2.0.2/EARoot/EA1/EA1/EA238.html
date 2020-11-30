@@ -101,6 +101,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -110,7 +111,7 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Quantity</i><br /><strong>&nbsp;&nbsp;epo:TotalMagnitudeQuantity</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:AdditionalClassification</strong>
 				</td>
 			</tr>
 			<tr>
@@ -159,7 +160,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The number of units required.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;The quantity needs to go along with the unit. In the ePO we use the ISO 15000-5 UN/CEFACT CCTS QuantityType for quantities, which uses the attribute &quot;unitCode&quot; to specify what the quantity is about.&lt;br/&gt;For example, 3 months; 131 printers; 1,000 tones; etc.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			Further subject of the purchase following a given nomenclature.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -168,7 +169,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ContractNature</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:AdditionalContractNature</strong>
 				</td>
 			</tr>
 			<tr>
@@ -217,7 +218,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Subject of the acquisition.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;
+			Additional type of acquisition taken into consideration in the contract.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -226,7 +227,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:MainClassification</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ContractNature</strong>
 				</td>
 			</tr>
 			<tr>
@@ -275,7 +276,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Principal subject of the purchase following a given nomenclature.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;
+			Subject of the acquisition.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -284,7 +285,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:AdditionalClassification</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:MainClassification</strong>
 				</td>
 			</tr>
 			<tr>
@@ -333,7 +334,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Further subject of the purchase following a given nomenclature.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;&lt;br/&gt;
+			Principal subject of the purchase following a given nomenclature.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -458,7 +459,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:AdditionalContractNature</strong>
+					<i>Public epo:Quantity</i><br /><strong>&nbsp;&nbsp;epo:TotalMagnitudeQuantity</strong>
 				</td>
 			</tr>
 			<tr>
@@ -507,7 +508,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Additional type of acquisition taken into consideration in the contract.&lt;br/&gt;&lt;br/&gt;WG Approval 11/06/2020&lt;br/&gt;&lt;br/&gt;
+			The number of units required.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;The quantity needs to go along with the unit. In the ePO we use the ISO 15000-5 UN/CEFACT CCTS QuantityType for quantities, which uses the attribute &quot;unitCode&quot; to specify what the quantity is about.&lt;br/&gt;For example, 3 months; 131 printers; 1,000 tones; etc.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -652,7 +653,20 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>

@@ -38,7 +38,7 @@ function nameClassifier(name, separator)
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">10/05/2018 9:35:29</td>
+			<td width="85%" class="ObjectDetailsValue">10/05/2018 09:35:29</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -101,6 +101,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -167,7 +168,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallQualityAwardCriteriaPonderation</strong>
+					<i>Public epo:Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallCostAwardCriteriaPonderation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -263,7 +264,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallCostAwardCriteriaPonderation</strong>
+					<i>Public epo:Numeric</i><br /><strong>&nbsp;&nbsp;epo:OverallQualityAwardCriteriaPonderation</strong>
 				</td>
 			</tr>
 			<tr>
@@ -378,7 +379,20 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-	</div>
+		<div class="ItemBody" id="CustomPropertiesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Property</td>
+					<td width="70%" class="TableHeading">Value</td>
+				</tr>
+			<tr>
+				<td width="30%" class="TableRow">isFinalSpecialization:</td>
+				<td width="70%" class="TableRow">0</td>
+			</tr>
+
+
+			</table>
+		</div>	</div>
 <div class="pageFooter"></div>
  
 </body>
