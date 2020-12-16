@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.2.1:1", "", "epo datatypes", "EARoot/EA2/EA1/EA275.html", "175.png", "33", "0", "", "Logical diagram0","{B0C416E7-3825-4a43-99E0-659306E74E22}");
-tocTab[tocTab.length] = new Array("0.2.1:2", "", "epo:Amount", "EARoot/EA2/EA1/EA278.html", "5.png", "E238", "0", "", "Class0","{83211DE7-FC08-41ca-90ED-B1D747548AC4}");
-tocTab[tocTab.length] = new Array("0.2.1:3", "", "epo:Identifier", "EARoot/EA2/EA1/EA279.html", "5.png", "E240", "0", "", "Class0","{ECF07FF0-8693-499d-AD7B-7484B8FDA398}");
-tocTab[tocTab.length] = new Array("0.2.1:4", "", "epo:Measure", "EARoot/EA2/EA1/EA280.html", "5.png", "E242", "0", "", "Class0","{7B1D00E9-E850-4739-8639-19A76F6FFF4D}");
-tocTab[tocTab.length] = new Array("0.2.1:5", "", "epo:Quantity", "EARoot/EA2/EA1/EA281.html", "5.png", "E244", "0", "", "Class0","{F9677E04-DED2-4052-8D25-BA714BA9C3EC}");
+tocTab[tocTab.length] = new Array("0.2.1:1", "", "epo datatypes", "EARoot/EA2/EA1/EA268.html", "175.png", "123", "0", "", "Logical diagram0","{B0C416E7-3825-4a43-99E0-659306E74E22}");
+tocTab[tocTab.length] = new Array("0.2.1:2", "", "epo:Amount", "EARoot/EA2/EA1/EA271.html", "5.png", "E1019", "0", "", "Class0","{83211DE7-FC08-41ca-90ED-B1D747548AC4}");
+tocTab[tocTab.length] = new Array("0.2.1:3", "", "epo:Identifier", "EARoot/EA2/EA1/EA272.html", "5.png", "E1020", "0", "", "Class0","{ECF07FF0-8693-499d-AD7B-7484B8FDA398}");
+tocTab[tocTab.length] = new Array("0.2.1:4", "", "epo:Measure", "EARoot/EA2/EA1/EA273.html", "5.png", "E1021", "0", "", "Class0","{7B1D00E9-E850-4739-8639-19A76F6FFF4D}");
+tocTab[tocTab.length] = new Array("0.2.1:5", "", "epo:Quantity", "EARoot/EA2/EA1/EA274.html", "5.png", "E1022", "0", "", "Class0","{F9677E04-DED2-4052-8D25-BA714BA9C3EC}");
