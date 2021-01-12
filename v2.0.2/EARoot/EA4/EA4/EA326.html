@@ -113,6 +113,54 @@ function nameClassifier(name, separator)
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes797')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes797" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes797_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes797_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes797_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes797_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes797_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes797_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes797_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes797_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public xsd:normalizedString</i><br /><strong>&nbsp;&nbsp;epo:IdentifierValue</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
 					<a href="#" onclick="parent.toggleData('DetailsImageAttributes798')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes798" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
@@ -151,12 +199,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The literal identifying an entity, like a person or an object.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public xsd:normalizedString</i><br /><strong>&nbsp;&nbsp;epo:IdentifierValue</strong>
+					<i>Public xsd:normalizedString</i><br /><strong>&nbsp;&nbsp;epo:SchemeAgencyID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -205,7 +263,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The literal identifying an entity, like a person or an object.&lt;br/&gt;
+			The identification of the agency that maintains the identification scheme.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -214,7 +272,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public xsd:normalizedString</i><br /><strong>&nbsp;&nbsp;epo:SchemeAgencyID</strong>
+					<i>Public xsd:string</i><br /><strong>&nbsp;&nbsp;epo:SchemeAgencyName</strong>
 				</td>
 			</tr>
 			<tr>
@@ -263,7 +321,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The identification of the agency that maintains the identification scheme.&lt;br/&gt;
+			The name of the agency that maintains the identification scheme.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -272,7 +330,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public xsd:string</i><br /><strong>&nbsp;&nbsp;epo:SchemeAgencyName</strong>
+					<i>Public xsd:anyURI</i><br /><strong>&nbsp;&nbsp;epo:SchemeDataURI</strong>
 				</td>
 			</tr>
 			<tr>
@@ -321,7 +379,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The name of the agency that maintains the identification scheme.&lt;br/&gt;
+			The Uniform Resource Identifier that identifies where the identification scheme data is located.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -330,7 +388,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public xsd:anyURI</i><br /><strong>&nbsp;&nbsp;epo:SchemeDataURI</strong>
+					<i>Public xsd:normalizedString</i><br /><strong>&nbsp;&nbsp;epo:SchemeID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -379,7 +437,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The Uniform Resource Identifier that identifies where the identification scheme data is located.&lt;br/&gt;
+			The identification of the identification scheme.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -388,7 +446,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public xsd:normalizedString</i><br /><strong>&nbsp;&nbsp;epo:SchemeID</strong>
+					<i>Public xsd:string</i><br /><strong>&nbsp;&nbsp;epo:SchemeName</strong>
 				</td>
 			</tr>
 			<tr>
@@ -437,7 +495,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The identification of the identification scheme.&lt;br/&gt;
+			The name of the identification scheme.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -446,7 +504,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public xsd:string</i><br /><strong>&nbsp;&nbsp;epo:SchemeName</strong>
+					<i>Public xsd:anyURI</i><br /><strong>&nbsp;&nbsp;epo:SchemeURI</strong>
 				</td>
 			</tr>
 			<tr>
@@ -495,7 +553,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The name of the identification scheme.&lt;br/&gt;
+			The Uniform Resource Identifier that identifies where the identification scheme is located.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -504,7 +562,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public xsd:anyURI</i><br /><strong>&nbsp;&nbsp;epo:SchemeURI</strong>
+					<i>Public xsd:normalizedString</i><br /><strong>&nbsp;&nbsp;epo:SchemeVersionID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -541,64 +599,6 @@ function nameClassifier(name, separator)
 							<td>False</td>
 						</tr>
 							<tr id="DetailsImageAttributes805_07" style="display: none;">
-							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
-						</tr>
-					</table>
-					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			The Uniform Resource Identifier that identifies where the identification scheme is located.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
-						
-				</td>
-			</tr>			<tr>
-				<td width="100%" class="TableRow">
-					<i>Public xsd:normalizedString</i><br /><strong>&nbsp;&nbsp;epo:SchemeVersionID</strong>
-				</td>
-			</tr>
-			<tr>
-				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes806')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes806" border="0" />Details:</a>
-					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
-					
-						<tr id="DetailsImageAttributes806_00" style="display: none;">
-							<td width="75"><i>Alias:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes806_01" style="display: none;">
-							<td width="75"><i>Initial:</i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes806_02" style="display: none;">
-							<td width="75"><i>Stereotype: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes806_03" style="display: none;">
-							<td width="75"><i>Ordered: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes806_04" style="display: none;">
-							<td width="75"><i>Range: </i></td>
-							<td></td>
-						</tr>
-						<tr id="DetailsImageAttributes806_05" style="display: none;">
-							<td width="75"><i>Transient: </i></td>
-							<td>False</td>
-						</tr>
-						<tr id="DetailsImageAttributes806_06" style="display: none;">
-							<td width="75"><i>Derived: </i></td>
-							<td>False</td>
-						</tr>
-							<tr id="DetailsImageAttributes806_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
