@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>epo::epo:ProcurementCriterionProperty</title>
+<title>epo::epo:Tenderer</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,11 +34,11 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("epo:ProcurementCriterionProperty", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("epo:Tenderer", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">28/05/2018 17:08:59</td>
+			<td width="85%" class="ObjectDetailsValue">16/05/2018 11:29:44</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">mfontsan</td>
+			<td class="ObjectDetailsValue">estaromi</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,14 +87,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{D8E807BC-2B8A-48ac-8515-9F8AB393080E}</td>
+			<td class="ObjectDetailsValue">{BB22A753-783A-4d79-B795-B4D7DEE0BA53}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA31.html">Lots</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA37.html">Procedure</a>, <a href="../EA17.html">Economic Operator</a>, <a href="../EA53.html">Tender</a>, <a href="../EA25.html">Evaluation Result</a>, <a href="../EA7.html">Contract</a>, <a href="../EA49.html">Submission</a>, <a href="../EA33.html">OfferedValue and AwardedValue</a>, <a href="../EA45.html">Result</a>, <a href="../EA23.html">ePO Overview</a>, <a href="../EA47.html">Roles and Subroles</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">An economic operator that has submitted a tender.&lt;br/&gt;&lt;br/&gt;WG approval 07/11/2018&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
@@ -109,24 +110,69 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA201.html">epo:Lot</a><br />
+						<a href="EA168.html">epo:ExclusionGround</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:isReferredToBy<br />
+						<strong>Name:</strong> &nbsp;<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> epo:appliesTo<br />
+						<strong>Name:</strong> epo:substantiates<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink593" onclick="parent.toggleDiv('detailsDIVLink593','DetailsImageLink593')" />Details:
-							<div id="detailsDIVLink593" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">The Contracting Authority uses this property to precise the Lots for which a concrete requirement (expressed as Procurement Criterion Property) is applicable to.&lt;br/&gt;&lt;br/&gt;WG Approval 05/09/2019 &lt;br/&gt;</div>
-
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink656" onclick="parent.toggleDiv('detailsDIVLink656','DetailsImageLink656')" />Details:
+							<div id="detailsDIVLink656" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA221.html">epo:Tender</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:isSubmittedBy<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:submits<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink657" onclick="parent.toggleDiv('detailsDIVLink657','DetailsImageLink657')" />Details:
+							<div id="detailsDIVLink657" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA221.html">epo:Tender</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> epo:withdraws<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink658" onclick="parent.toggleDiv('detailsDIVLink658','DetailsImageLink658')" />Details:
+							<div id="detailsDIVLink658" class="DetailsDiv" >
+							&nbsp;
 							</div>
 						</div>
 					</td>
@@ -144,10 +190,17 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA227.html">epo:Property</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA164.html">epo:EconomicOperator</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA227.html">epo:Winner</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 
