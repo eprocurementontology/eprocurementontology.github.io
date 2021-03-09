@@ -101,7 +101,6 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
 			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
-			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -227,7 +226,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:CompetitionTermination</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:MainFeatures</strong>
 				</td>
 			</tr>
 			<tr>
@@ -276,7 +275,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			No further contracts will be awarded in this procedure. &lt;br/&gt;&lt;br/&gt;Additional Information: &lt;br/&gt;&lt;br/&gt;PIN for Competition needs to be signaled. This field can be used even if no contracts are awarded in the contract award notice.&lt;br/&gt;&lt;br/&gt;
+			Main features of the procedure and information about where the full rules for the procedure can be found. &lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;This information should be given when the procedure is not one of those mentioned in the procurement directives. This can be the case for example for concessions, for social and other specific services, and in case of voluntary publication of procurement procedures below the EU procurement thresholds.&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -285,7 +284,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
+					<i>Public epo:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -334,7 +333,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A narrative text explaining the content of an instance of the class / Self-explanatory text about a concept&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+			A unique identifier of the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;For example, in the case of the Procurement Identifier, this could be the European Public Procurement Identifier, and/or any other identifier provided by the buyer, the service provider or any other stakeholder.&lt;br/&gt;&lt;br/&gt;WG Approval 12/11/2019&lt;br/&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -343,7 +342,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Identifier</i><br /><strong>&nbsp;&nbsp;epo:ID</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Description</strong>
 				</td>
 			</tr>
 			<tr>
@@ -392,7 +391,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A unique identifier of the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;For example, in the case of the Procurement Identifier, this could be the European Public Procurement Identifier, and/or any other identifier provided by the buyer, the service provider or any other stakeholder.&lt;br/&gt;&lt;br/&gt;WG Approval 12/11/2019&lt;br/&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;br/&gt;
+			A narrative text explaining the content of an instance of the class / Self-explanatory text about a concept&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -401,7 +400,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:LegalBasis</strong>
+					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Title</strong>
 				</td>
 			</tr>
 			<tr>
@@ -444,12 +443,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A short self-descriptive name of the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;For example, the title of a planned part that may become a procedure or a lot in the future; the title of a contract, etc.&lt;br/&gt;&lt;br/&gt;(WG Approval 11-11-2019)&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:URI</i><br /><strong>&nbsp;&nbsp;epo:LegalBasisID</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:Type</strong>
 				</td>
 			</tr>
 			<tr>
@@ -492,7 +501,17 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The categorisation of the set of activities of the procedure according to the Law. &lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;For example &quot;Open Procedure&quot;, &quot;Restricted&quot;, &quot;Negotiated without Publicity&quot;, etc. (see code list &quot;procurement-procedure-type&quot;&lt;br/&gt;&lt;br/&gt;WG Approval 20/08/2019&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
@@ -613,7 +632,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:MainFeatures</strong>
+					<i>Public epo:Numeric</i><br /><strong>&nbsp;&nbsp;epo:MaximumNumberOfLotsToBeAwarded</strong>
 				</td>
 			</tr>
 			<tr>
@@ -662,7 +681,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			Main features of the procedure and information about where the full rules for the procedure can be found. &lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;&lt;br/&gt;This information should be given when the procedure is not one of those mentioned in the procurement directives. This can be the case for example for concessions, for social and other specific services, and in case of voluntary publication of procurement procedures below the EU procurement thresholds.&lt;br/&gt;
+			The maximum number of lots for which contract(s) can be awarded to one tenderer.&lt;br/&gt;&lt;br/&gt;WG Approval 22/08/2019&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -671,7 +690,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Numeric</i><br /><strong>&nbsp;&nbsp;epo:MaximumNumberOfLotsToBeAwarded</strong>
+					<i>Public epo:Indicator</i><br /><strong>&nbsp;&nbsp;epo:CompetitionTermination</strong>
 				</td>
 			</tr>
 			<tr>
@@ -720,7 +739,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The maximum number of lots for which contract(s) can be awarded to one tenderer.&lt;br/&gt;&lt;br/&gt;WG Approval 22/08/2019&lt;br/&gt;
+			No further contracts will be awarded in this procedure. &lt;br/&gt;&lt;br/&gt;Additional Information: &lt;br/&gt;&lt;br/&gt;PIN for Competition needs to be signaled. This field can be used even if no contracts are awarded in the contract award notice.&lt;br/&gt;&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -729,7 +748,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ProcedureType</strong>
+					<i>Public epo:URI</i><br /><strong>&nbsp;&nbsp;epo:LegalBasisID</strong>
 				</td>
 			</tr>
 			<tr>
@@ -772,22 +791,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Identification of the Procedure used. &lt;br/&gt;&lt;br/&gt;WG Approval 09/06/2020&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ProcurementRegime</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:LegalBasis</strong>
 				</td>
 			</tr>
 			<tr>
@@ -830,22 +839,12 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			A set of principles and rules categorising different ways of performing specific procurement procedures. &lt;br/&gt;&lt;br/&gt;WG Approval 09/06/2020&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Text</i><br /><strong>&nbsp;&nbsp;epo:Title</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ProcurementRegime</strong>
 				</td>
 			</tr>
 			<tr>
@@ -894,7 +893,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			A short self-descriptive name of the instance of the concept.&lt;br/&gt;&lt;br/&gt;Additional Information:&lt;br/&gt;&lt;br/&gt;For example, the title of a planned part that may become a procedure or a lot in the future; the title of a contract, etc.&lt;br/&gt;&lt;br/&gt;(WG Approval 11-11-2019)&lt;br/&gt;
+			A set of principles and rules categorising different ways of performing specific procurement procedures. &lt;br/&gt;&lt;br/&gt;WG Approval 09/06/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -903,7 +902,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:Type</strong>
+					<i>Public epo:Code</i><br /><strong>&nbsp;&nbsp;epo:ProcedureType</strong>
 				</td>
 			</tr>
 			<tr>
@@ -952,7 +951,7 @@ function nameClassifier(name, separator)
 			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
 		</td>
 		<td>
-			The categorisation of the set of activities of the procedure according to the Law. &lt;br/&gt;&lt;br/&gt;Additional Information&lt;br/&gt;For example &quot;Open Procedure&quot;, &quot;Restricted&quot;, &quot;Negotiated without Publicity&quot;, etc. (see code list &quot;procurement-procedure-type&quot;&lt;br/&gt;&lt;br/&gt;WG Approval 20/08/2019&lt;br/&gt;&lt;br/&gt;
+			Identification of the Procedure used. &lt;br/&gt;&lt;br/&gt;WG Approval 09/06/2020&lt;br/&gt;
 		</td>
 	</tr>
 </table></div>
@@ -1331,20 +1330,7 @@ function nameClassifier(name, separator)
 
 			</table>
 		</div>
-		<div class="ItemBody" id="CustomPropertiesTable">
-			<table border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Property</td>
-					<td width="70%" class="TableHeading">Value</td>
-				</tr>
-			<tr>
-				<td width="30%" class="TableRow">isFinalSpecialization:</td>
-				<td width="70%" class="TableRow">0</td>
-			</tr>
-
-
-			</table>
-		</div>		<div class="ItemBody" id="LinksTable">
+		<div class="ItemBody" id="LinksTable">
 			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
 				<tr>
 					<td width="30%" class="TableHeading">Object</td>
